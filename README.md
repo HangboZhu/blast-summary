@@ -15,12 +15,9 @@
 ### 方式一：pip安装（推荐）
 
 ```bash
+git cloen https://github.com/HangboZhu/blast-summary.git
 pip install -e .
-```
 
-### 方式二：从requirements安装
-
-```bash
 pip install -r requirements.txt
 ```
 
