@@ -1,0 +1,2841 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/blastdisk3/bit_group/web/blast/database/ncbi/swissprot/swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>HBA_HUMAN</BlastOutput_query-def>
+  <BlastOutput_query-len>142</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.05</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>HBA_HUMAN</Iteration_query-def>
+  <Iteration_query-len>142</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|P69905.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Homo sapiens] &gt;sp|P69906.2| RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pan paniscus] &gt;sp|P69907.2| RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pan troglodytes]</Hit_def>
+  <Hit_accession>P69905</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>204.137</Hsp_bit-score>
+      <Hsp_score>468</Hsp_score>
+      <Hsp_evalue>1.71051e-64</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>110</Hsp_identity>
+      <Hsp_positive>111</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKAAWGKVGAHAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV AAWGKVGA  GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN VA V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P01923.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Gorilla gorilla gorilla]</Hit_def>
+  <Hit_accession>P01923</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.852</Hsp_bit-score>
+      <Hsp_score>458</Hsp_score>
+      <Hsp_evalue>7.73286e-63</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWGKVGAHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVGA  G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN VA V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>sp|Q9TS35.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]</Hit_def>
+  <Hit_accession>Q9TS35</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>199.424</Hsp_bit-score>
+      <Hsp_score>457</Hsp_score>
+      <Hsp_evalue>9.36804e-63</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKAAWGKVGAHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV AAWGKVGA  G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN VA V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>sp|P01924.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Semnopithecus entellus]</Hit_def>
+  <Hit_accession>P01924</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>198.995</Hsp_bit-score>
+      <Hsp_score>456</Hsp_score>
+      <Hsp_evalue>1.20958e-62</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>110</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWGKVGGHGGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPHALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVG  GGEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN VA V D  + LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>sp|P06635.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pongo pygmaeus]</Hit_def>
+  <Hit_accession>P06635</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>198.138</Hsp_bit-score>
+      <Hsp_score>454</Hsp_score>
+      <Hsp_evalue>3.71669e-62</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKTAWGKVGAHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKDHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV  AWGKVGA  G+YG E A ER    FP TKTY PHF LSHGS Q+K  GKKVADA TN VA V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>sp|P67817.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ateles geoffroyi]</Hit_def>
+  <Hit_accession>P67817</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>195.139</Hsp_bit-score>
+      <Hsp_score>447</Hsp_score>
+      <Hsp_evalue>4.16713e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKSNVKAAWGKVGGHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV AAWGKVG   G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN VA V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>sp|P18972.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mico argentatus]</Hit_def>
+  <Hit_accession>P18972</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>195.139</Hsp_bit-score>
+      <Hsp_score>447</Hsp_score>
+      <Hsp_evalue>4.43578e-61</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKSNVKAAWGKVGSHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVG+  G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN VA V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>sp|P63107.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Macaca fuscata fuscata] &gt;sp|P63108.2| RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Macaca mulatta]</Hit_def>
+  <Hit_accession>P63107</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>195.139</Hsp_bit-score>
+      <Hsp_score>447</Hsp_score>
+      <Hsp_evalue>5.24244e-61</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKSNVKAAWGKVGGHAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTLAVGHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV AAWGKVG   GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  V  V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>sp|Q7M3B6.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Saguinus mystax]</Hit_def>
+  <Hit_accession>Q7M3B6</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.711</Hsp_bit-score>
+      <Hsp_score>446</Hsp_score>
+      <Hsp_evalue>6.45131e-61</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>109</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKSNVKAAWGKVGGHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVALVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVG   G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN VA+V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>sp|Q9TS34.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; Contains: RecName: Full=Hemopressin [Hylobates lar]</Hit_def>
+  <Hit_accession>Q9TS34</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>194.282</Hsp_bit-score>
+      <Hsp_score>445</Hsp_score>
+      <Hsp_evalue>1.08228e-60</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKTAWGKVGAHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNAQTALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV  AWGKVGA  G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN VA V D  N  +ALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>sp|P67818.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Saguinus oedipus]</Hit_def>
+  <Hit_accession>P67818</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.997</Hsp_bit-score>
+      <Hsp_score>442</Hsp_score>
+      <Hsp_evalue>3.50098e-60</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKSNVKAAWGKVGGHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVG   G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN VA V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>sp|P01926.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Chlorocebus aethiops]</Hit_def>
+  <Hit_accession>P01926</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.568</Hsp_bit-score>
+      <Hsp_score>441</Hsp_score>
+      <Hsp_evalue>4.89843e-60</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKSNVKAAWGKVGGHAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTLAVGHVDDMPHALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV AAWGKVG   GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  V  V D  + LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>sp|P01928.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Sapajus apella]</Hit_def>
+  <Hit_accession>P01928</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>192.568</Hsp_bit-score>
+      <Hsp_score>441</Hsp_score>
+      <Hsp_evalue>5.14087e-60</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKTAWGKVGGHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALSNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV  AWGKVG   G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA +N VA V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>sp|P01929.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Leontocebus fuscicollis]</Hit_def>
+  <Hit_accession>P01929</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>191.283</Hsp_bit-score>
+      <Hsp_score>438</Hsp_score>
+      <Hsp_evalue>1.33789e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKSNVKAAWGKVGGHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTVAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVG   G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  VA V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>sp|P01930.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Piliocolobus badius]</Hit_def>
+  <Hit_accession>P01930</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>190.854</Hsp_bit-score>
+      <Hsp_score>437</Hsp_score>
+      <Hsp_evalue>2.56162e-59</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKTAWGKVGGHGGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTLAAAHVDDMPSALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV  AWGKVG  GGEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T   A V D  + LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>sp|P07421.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Cebus capucinus]</Hit_def>
+  <Hit_accession>P07421</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>190.854</Hsp_bit-score>
+      <Hsp_score>437</Hsp_score>
+      <Hsp_evalue>2.56812e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>108</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKTAWGKVGAHAGDYGAD-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALSNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV  AWGKVGA  G+YG + A ER    FP TKTY PHF LSHGS Q+KG GKKVADA +N VA V D  N LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>sp|P21766.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1/2/3; AltName: Full=Alpha-1/2/3-globin; AltName: Full=Hemoglobin alpha-1/2/3 chain [Macaca assamensis]</Hit_def>
+  <Hit_accession>P21766</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>190.854</Hsp_bit-score>
+      <Hsp_score>437</Hsp_score>
+      <Hsp_evalue>2.56812e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWGKVGGHAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTLAVGHVDDMPHALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVG   GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  V  V D  + LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>sp|P21767.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-A/Q/R/T; AltName: Full=Alpha-A/Q/R/T-globin; AltName: Full=Hemoglobin alpha-A/Q/R/T chain [Macaca fascicularis]</Hit_def>
+  <Hit_accession>P21767</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>190.854</Hsp_bit-score>
+      <Hsp_score>437</Hsp_score>
+      <Hsp_evalue>2.59931e-59</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>105</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWGKVGGHAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTLAVGHVDDMPQALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVG   GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  V  V D    LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>sp|P21768.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Macaca sinica]</Hit_def>
+  <Hit_accession>P21768</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.855</Hsp_bit-score>
+      <Hsp_score>430</Hsp_score>
+      <Hsp_evalue>2.97789e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKDAWGKVGGHAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTLAVGHVDDMPQALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV  AWGKVG   GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  V  V D    LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>sp|P19002.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1/2/3; AltName: Full=Alpha-1/2/3-globin; AltName: Full=Hemoglobin alpha-1/2/3 chain [Macaca nemestrina]</Hit_def>
+  <Hit_accession>P19002</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.855</Hsp_bit-score>
+      <Hsp_score>430</Hsp_score>
+      <Hsp_evalue>3.56888e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWGKVGGHAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTLAVDHVDDMPQALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVGTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVG   GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  V  V D    LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASV TVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>sp|P07402.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Macaca arctoides]</Hit_def>
+  <Hit_accession>P07402</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>187.855</Hsp_bit-score>
+      <Hsp_score>430</Hsp_score>
+      <Hsp_evalue>3.70046e-58</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>104</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWDKVGGHAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTLAVGHVDDMPHALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAW KVG   GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  V  V D  + LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>sp|P01935.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-3; AltName: Full=Alpha-3-globin; AltName: Full=Hemoglobin alpha-2 chain [Pan troglodytes]</Hit_def>
+  <Hit_accession>P01935</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>186.141</Hsp_bit-score>
+      <Hsp_score>426</Hsp_score>
+      <Hsp_evalue>1.39551e-57</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWGKVGAHAGZYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAZVKGHGKKVAKALSBAVZHLDDMPNALSALSBLHAHKLRVBPVBFKLLN-HC-LLVTLAABFPSZFTPAVHASVDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVGA  G+YG E A ER    FP TKTY PHF LSHGS ++KG GKKVA A ++ V  + D  N LSALS LHAH LR +PV+FKLL+ HC LLVTLAA  P++FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>sp|P01934.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-3; AltName: Full=Alpha-3-globin; AltName: Full=Hemoglobin alpha-2 chain [Gorilla gorilla gorilla]</Hit_def>
+  <Hit_accession>P01934</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>186.141</Hsp_bit-score>
+      <Hsp_score>426</Hsp_score>
+      <Hsp_evalue>1.71321e-57</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>107</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWGKVGAHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAZVKGHGKKVAKALTBAVZHLDDMPNALSALSBLHAHKLRVBPVBFKLLN-HC-LLVTLAABFPSZFTPAVHASVDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAWGKVGA  G+YG E A ER    FP TKTY PHF LSHGS ++KG GKKVA A T+ V  + D  N LSALS LHAH LR +PV+FKLL+ HC LLVTLAA  P++FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>sp|P08258.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain; AltName: Full=Hemoglobin alpha-I/II chain [Mandrillus sphinx]</Hit_def>
+  <Hit_accession>P08258</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>185.284</Hsp_bit-score>
+      <Hsp_score>424</Hsp_score>
+      <Hsp_evalue>3.20822e-57</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>103</Hsp_identity>
+      <Hsp_positive>104</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKKNVKAAWDKVGGHAGEYGAE-ALERMFLSFPTTKTYFPHFNLSHGSDQVKGHGKKVADALTLAVGHVDDMPQALSKLSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAW KVG   GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  V  V D    LS LS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>sp|P01939.3|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-B; AltName: Full=Alpha-B-globin; AltName: Full=Alpha-II; AltName: Full=Hemoglobin alpha-B chain [Otolemur crassicaudatus]</Hit_def>
+  <Hit_accession>P01939</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>183.57</Hsp_bit-score>
+      <Hsp_score>420</Hsp_score>
+      <Hsp_evalue>1.92886e-56</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>101</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPTDKSNVKAAWEKVGAHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSTQVKGHGKKVADALTNAVLHVDDMPSALSALSDLHAHKLRVDPVNFKLLR-HC-LLVTLACHHPAEFTPAVHASLDKFMASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSP D  NV AAW KVGA  G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN V  V D  + LSALS LHAH LR DPVNFKLL  HC LLVTLA   PAEFTPAV AS DKF+ASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>sp|P01933.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Cercocebus atys]</Hit_def>
+  <Hit_accession>P01933</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>183.142</Hsp_bit-score>
+      <Hsp_score>419</Hsp_score>
+      <Hsp_evalue>2.0556e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>102</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPDDKKHVKAAWGKVGEHAGEYGAE-ALERMFLSFPTTKTYFPHFNLSHGSDQVKGHGKKVADALTLAVGHVDDMPHALSKLSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSP D  +V AAWGKVG   GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  V  V D  + LS LS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>sp|P01937.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Nycticebus coucang]</Hit_def>
+  <Hit_accession>P01937</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>182.713</Hsp_bit-score>
+      <Hsp_score>418</Hsp_score>
+      <Hsp_evalue>2.88119e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>106</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWEKVGSHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKAHGKKVADALTNAVSHVDDMPSALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLACHHPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAW KVG+  G+YG E A ER    FP TKTY PHF LSHGS Q+K  GKKVADA TN V+ V D  + LSALS LHAH LR DPVNFKLLS HC LLVTLA   PA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>sp|P01953.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Meles meles]</Hit_def>
+  <Hit_accession>P01953</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>181.856</Hsp_bit-score>
+      <Hsp_score>416</Hsp_score>
+      <Hsp_evalue>8.84164e-56</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>99</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKANIKATWDKIGGHAGEYGGE-ALERTFASFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHLDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFLSSVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  N+ A W K+G   GEYGGE A ER    FP TKTY PHF LSHGS Q+KG GKKVADA TN VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKFL+SVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>sp|P63111.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Papio anubis] &gt;sp|P63112.2| RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Papio cynocephalus]</Hit_def>
+  <Hit_accession>P63111</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>180.142</Hsp_bit-score>
+      <Hsp_score>412</Hsp_score>
+      <Hsp_evalue>3.04868e-55</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>101</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPDDKKHVKAAWGKVGEHAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSDQVNKHGKKVADALTLAVGHVDDMPQALSKLSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSP D  +V AAWGKVG   GEYG E A ER    FP TKTY PHF LSHGS Q+   GKKVADA T  V  V D    LS LS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>sp|B3EWC7.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha [Tamias merriami]</Hit_def>
+  <Hit_accession>B3EWC7</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>179.714</Hsp_bit-score>
+      <Hsp_score>411</Hsp_score>
+      <Hsp_evalue>5.65768e-55</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWEKVGGHGAAYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVQGHGKKVADALANAAGHLDDLPSALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLATVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAW KVG  G   G  A ER    FP TKTY PHF LSHGS Q++G GKKVADA  N    + D  + LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLA+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>sp|P01940.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Cephalopachus bancanus]</Hit_def>
+  <Hit_accession>P01940</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>179.285</Hsp_bit-score>
+      <Hsp_score>410</Hsp_score>
+      <Hsp_evalue>6.94391e-55</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>104</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWDKVGGHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSSQVKGHGKKVADALTTAVGHIDNMPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLACHHPADFTPAVHASLDKFVASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAW KVG   G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKVADA T  V  + +  N LSALS LHAH LR DPVNFKLLS HC LLVTLA   PA+FTPAV AS DKF+ASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>sp|P01938.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Loris tardigradus]</Hit_def>
+  <Hit_accession>P01938</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>179.285</Hsp_bit-score>
+      <Hsp_score>410</Hsp_score>
+      <Hsp_evalue>7.7393e-55</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>99</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKTAWEKVGGHAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKAHGKKVADALTTAVSHVDDMPSALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLACHHPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV  AW KVG   GEYG E A ER    FP TKTY PHF LSHGS Q+K  GKKVADA T  V+ V D  + LSALS LHAH LR DPVNFKLLS HC LLVTLA   PA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>sp|P11753.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Cynopterus sphinx]</Hit_def>
+  <Hit_accession>P11753</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>178.857</Hsp_bit-score>
+      <Hsp_score>409</Hsp_score>
+      <Hsp_evalue>1.15182e-54</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAG-GEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWDKVGGNAGEYGAE-ALERMFLSFPTTKTYFPHFDLAHGSPQVKGHGKKVGDALTNAVSHIDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLANHLPSDFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAW KVG   GEYG E A ER    FP TKTY PHF L+HGS Q+KG GKKV DA TN V+ + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA  LP++FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>sp|P14259.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-A; AltName: Full=Alpha-A-globin; Short=Alpha-I; AltName: Full=Hemoglobin alpha-A chain [Otolemur crassicaudatus]</Hit_def>
+  <Hit_accession>P14259</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>178.857</Hsp_bit-score>
+      <Hsp_score>409</Hsp_score>
+      <Hsp_evalue>1.18959e-54</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>104</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPTDKSIVKAAWEKVGAHAGDYGAE-ALERMFLSFPTTKTYFPQFDLSHGSAQVKGHGKKVADALTNAVLHVDDMPSALSALSDLHAHKLTVDPVNFKLLS-HC-LLVTLACHLPAEFTPAVHASLDKFMASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSP D   V AAW KVGA  G+YG E A ER    FP TKTY P F LSHGS Q+KG GKKVADA TN V  V D  + LSALS LHAH L  DPVNFKLLS HC LLVTLA  LPAEFTPAV AS DKF+ASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>sp|P01936.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Eulemur fulvus fulvus]</Hit_def>
+  <Hit_accession>P01936</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>178</Hsp_bit-score>
+      <Hsp_score>407</Hsp_score>
+      <Hsp_evalue>2.67686e-54</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKTAWNAVGGQAGEHGAE-ALERMFLSFPTTKTYFPHFDLSHGSGQVKAHGKKVADALTNAVSHLDDMPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLASHHPAEFTPAVHASLDKFFAAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV  AW  VG   GE+G E A ER    FP TKTY PHF LSHGSGQ+K  GKKVADA TN V+ + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA+  PAEFTPAV AS DKF A+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>sp|P20243.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Mustela putorius furo]</Hit_def>
+  <Hit_accession>P20243</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>177.143</Hsp_bit-score>
+      <Hsp_score>405</Hsp_score>
+      <Hsp_evalue>4.49334e-54</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKSTWDKIGGHAGEYGGE-ALERTFASFPTTKTYFPHFDLSHGSAQVKAHGKKVADALTNAVAHVDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV + W K+G   GEYGGE A ER    FP TKTY PHF LSHGS Q+K  GKKVADA TN VA V D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>sp|P11757.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Myotis velifer]</Hit_def>
+  <Hit_accession>P11757</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>176.714</Hsp_bit-score>
+      <Hsp_score>404</Hsp_score>
+      <Hsp_evalue>6.29548e-54</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNIKAAWDKVGAHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVGDALGNAVAHMDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHLPGEFTPAIHASLDKFLASVSTVLVSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  N+ AAW KVGA  G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKV DA  N VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA  LP EFTPA+ AS DKFLASVSTVL   YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>sp|B3EWD9.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha [Tamias striatus]</Hit_def>
+  <Hit_accession>B3EWD9</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>176.714</Hsp_bit-score>
+      <Hsp_score>404</Hsp_score>
+      <Hsp_evalue>6.76724e-54</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>105</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNLKAAWHKLGGHGGEYGAE-ALERMFATFPTTKTYFPHFDLSHGSAQVQGHGEKVADALLHAVGNLDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLATVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  N+ AAW K+G  GGEYG E A ER    FP TKTY PHF LSHGS Q++G G+KVADA  + V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLA+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>sp|P20854.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ctenodactylus gundi]</Hit_def>
+  <Hit_accession>P20854</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>176.714</Hsp_bit-score>
+      <Hsp_score>404</Hsp_score>
+      <Hsp_evalue>8.92704e-54</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSAADKTNVKAAWDKIGGHGGEYGAE-ALERMFLSFPTTKTYFPHFDVSHGSAQVKAHGKKVADALANAASHLDDLPNALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFLATVATVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS AD  NV AAW K+G  GGEYG E A ER    FP TKTY PHF +SHGS Q+K  GKKVADA  N  + + D  N LSALS LHAH LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKFLA+V+TVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>sp|P01956.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Rousettus aegyptiacus]</Hit_def>
+  <Hit_accession>P01956</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>176.286</Hsp_bit-score>
+      <Hsp_score>403</Hsp_score>
+      <Hsp_evalue>1.12221e-53</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAG-GEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSSADKTNIKAAWDKVGGNAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVGDALTNAVGHLDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLANHLPSDFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS AD  N+ AAW KVG   GEYG E A ER    FP TKTY PHF LSHGS Q+KG GKKV DA TN V  + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA  LP++FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>sp|P01932.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Theropithecus gelada]</Hit_def>
+  <Hit_accession>P01932</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>176.286</Hsp_bit-score>
+      <Hsp_score>403</Hsp_score>
+      <Hsp_evalue>1.13581e-53</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>99</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPDDKKHVKDAWGKVGEHAGQYGAE-ALERMFLSFPTTKTYFPHFDLSHGSDQVKKHGKKVADALTLAVGHVDDMPQALSKLSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSP D  +V  AWGKVG   G+YG E A ER    FP TKTY PHF LSHGS Q+K  GKKVADA T  V  V D    LS LS LHAH LR DPVNFKLLS HC LLVTLAA LPAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>sp|P23601.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Mustela putorius]</Hit_def>
+  <Hit_accession>P23601</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>175.857</Hsp_bit-score>
+      <Hsp_score>402</Hsp_score>
+      <Hsp_evalue>1.49826e-53</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKSTWDKIGGHAGEYGGE-ALERTFASFPTTKTYFPHFDLSHGSAQVKAHGKKVADALTNAVAHMDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV + W K+G   GEYGGE A ER    FP TKTY PHF LSHGS Q+K  GKKVADA TN VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>sp|P10892.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Lutra lutra]</Hit_def>
+  <Hit_accession>P10892</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>175.857</Hsp_bit-score>
+      <Hsp_score>402</Hsp_score>
+      <Hsp_evalue>1.49826e-53</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKSTWDKIGGHAGEYGGE-ALERTFVSFPTTKTYFPHFDLSHGSAQVKAHGKKVADALTNAVAHMDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV + W K+G   GEYGGE A ER    FP TKTY PHF LSHGS Q+K  GKKVADA TN VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>sp|P09908.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Phoca vitulina]</Hit_def>
+  <Hit_accession>P09908</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>175.857</Hsp_bit-score>
+      <Hsp_score>402</Hsp_score>
+      <Hsp_evalue>1.83859e-53</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKATWDKIGGHAGEYGGE-ALERTFTAFPTTKTYFPHFDLSHGSAQVKAHGKKVADALTTAVAHMDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLACHHPADFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV A W K+G   GEYGGE A ER    FP TKTY PHF LSHGS Q+K  GKKVADA T  VA + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA   PA+FTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>sp|P23600.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Mustela lutreola]</Hit_def>
+  <Hit_accession>P23600</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>175.429</Hsp_bit-score>
+      <Hsp_score>401</Hsp_score>
+      <Hsp_evalue>2.57571e-53</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKSTWDKIGGHAGEYGGE-ALERTFASFPTTKTYFPHFDLSHGSAQVKAHGKKVADALTNAVAHMDDLPGAMSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV + W K+G   GEYGGE A ER    FP TKTY PHF LSHGS Q+K  GKKVADA TN VA + D    +SALS LHA+ LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>sp|P09839.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Macrotus californicus]</Hit_def>
+  <Hit_accession>P09839</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.572</Hsp_bit-score>
+      <Hsp_score>399</Hsp_score>
+      <Hsp_evalue>4.32234e-53</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSAADKGNVKAAWDKVGGQAGEYGAE-ALERMFLSFPTTKTYFPHFDLAHGSAQVKGHGKKVADALTNAVGHMDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLASHHPAEFTPAIHASLDKFFASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS AD  NV AAW KVG   GEYG E A ER    FP TKTY PHF L+HGS Q+KG GKKVADA TN V  + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA+  PAEFTPA+ AS DKF ASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>sp|P41330.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; AltName: Full=Hemoglobin alpha-II chain [Arctocephalus galapagoensis]</Hit_def>
+  <Hit_accession>P41330</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.572</Hsp_bit-score>
+      <Hsp_score>399</Hsp_score>
+      <Hsp_evalue>6.40203e-53</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKTTWDKLGGHAGEYGGE-ALERTFTAFPTTKTYFPHFDLSHGSAQVKAHGKKVADALTTAVAHMDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV   W K+G   GEYGGE A ER    FP TKTY PHF LSHGS Q+K  GKKVADA T  VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>sp|P20018.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; AltName: Full=Hemoglobin alpha-I chain [Varecia variegata]</Hit_def>
+  <Hit_accession>P20018</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.143</Hsp_bit-score>
+      <Hsp_score>398</Hsp_score>
+      <Hsp_evalue>6.58708e-53</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKNNVKSAWNAIGSHAGEHGAE-ALERMFLSFPPTKTYFPHFDLSHGSAQIKTHGKKVADALTNAVNHIDDMPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLASHHPAEFTPAVHASLDKFFAAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV +AW  +G+  GE+G E A ER    FP TKTY PHF LSHGS Q+K  GKKVADA TN V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA+  PAEFTPAV AS DKF A+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>sp|P01942.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mus musculus]</Hit_def>
+  <Hit_accession>P01942</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.143</Hsp_bit-score>
+      <Hsp_score>398</Hsp_score>
+      <Hsp_evalue>7.2208e-53</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSGEDKSNIKAAWGKIGGHGAEYGAE-ALERMFASFPTTKTYFPHFDVSHGSAQVKGHGKKVADALASAAGHLDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLASHHPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS  D  N+ AAWGK+G  G EYG E A ER    FP TKTY PHF +SHGS Q+KG GKKVADA  +    + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA+  PA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>sp|P18970.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ailuropoda melanoleuca]</Hit_def>
+  <Hit_accession>P18970</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.143</Hsp_bit-score>
+      <Hsp_score>398</Hsp_score>
+      <Hsp_evalue>7.7615e-53</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKATWDKIGGHAGEYGGE-ALERTFASFPTTKTYFPHFDLSPGSAQVKAHGKKVADALTTAVGHLDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLASHHPAEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV A W K+G   GEYGGE A ER    FP TKTY PHF LS GS Q+K  GKKVADA T  V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA+  PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>51</Hit_num>
+  <Hit_id>sp|P01945.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mesocricetus auratus]</Hit_def>
+  <Hit_accession>P01945</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.143</Hsp_bit-score>
+      <Hsp_score>398</Hsp_score>
+      <Hsp_evalue>8.48142e-53</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQLF--PMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSAKDKTNISEAWGKIGGHAGEYGAE-ALERMFFVYPTTKTYFPHFDVSHGSAQVKGHGKKVADALTNAVGHLDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLANHHPADFTPAVHASLDKFFASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS  D  N+  AWGK+G   GEYG E A ER  F  P TKTY PHF +SHGS Q+KG GKKVADA TN V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA   PA+FTPAV AS DKF ASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>52</Hit_num>
+  <Hit_id>sp|P14387.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Antrozous pallidus]</Hit_def>
+  <Hit_accession>P14387</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.143</Hsp_bit-score>
+      <Hsp_score>398</Hsp_score>
+      <Hsp_evalue>9.18579e-53</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKAAWDKVGGHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVGDALGNAVAHMDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPGDFTPAVHASLDKFLASVSTVLVSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV AAW KVG   G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKV DA  N VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   P +FTPAV AS DKFLASVSTVL   YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>53</Hit_num>
+  <Hit_id>sp|P20019.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; AltName: Full=Hemoglobin alpha-II chain [Varecia variegata]</Hit_def>
+  <Hit_accession>P20019</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>173.715</Hsp_bit-score>
+      <Hsp_score>397</Hsp_score>
+      <Hsp_evalue>1.20241e-52</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKNNVKSAWKAIGSHAGEHGAE-ALERMFLSFPPTKTYFPHFDLSHGSAQIKTHGKKVADALTNAVNHIDDMPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLASHHPAEFTPAVHASLDKFFAAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV +AW  +G+  GE+G E A ER    FP TKTY PHF LSHGS Q+K  GKKVADA TN V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA+  PAEFTPAV AS DKF A+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>54</Hit_num>
+  <Hit_id>sp|P28780.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Taphozous georgianus]</Hit_def>
+  <Hit_accession>P28780</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.43</Hsp_bit-score>
+      <Hsp_score>394</Hsp_score>
+      <Hsp_evalue>3.50893e-52</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWEKVGGHAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSSQVKGHGKKVGDALGNAVAHMDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLASHHAADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAW KVG   G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKV DA  N VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA+   A+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>55</Hit_num>
+  <Hit_id>sp|P10885.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pteronura brasiliensis]</Hit_def>
+  <Hit_accession>P10885</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.43</Hsp_bit-score>
+      <Hsp_score>394</Hsp_score>
+      <Hsp_evalue>3.59439e-52</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKATWDKIGGHAGEYGGE-ALERTFASFPTTKTYFPHFDLSPGSAQVKAHGKKVADALTNAVAHMDDLPAALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSTVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV A W K+G   GEYGGE A ER    FP TKTY PHF LS GS Q+K  GKKVADA TN VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>56</Hit_num>
+  <Hit_id>sp|D0VX09.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pteropus vampyrus]</Hit_def>
+  <Hit_accession>D0VX09</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.43</Hsp_bit-score>
+      <Hsp_score>394</Hsp_score>
+      <Hsp_evalue>3.95756e-52</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAG-GEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSSTDKSNVKAAWDKVGGNVGEYGAE-ALERMFLSFPTTKTYFPHFDLAHGSSQVKAHGKKVGDALTNAVGHIDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLASHLPSDFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS  D  NV AAW KVG   GEYG E A ER    FP TKTY PHF L+HGS Q+K  GKKV DA TN V  + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA+ LP++FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>57</Hit_num>
+  <Hit_id>sp|P08852.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Marmota marmota marmota]</Hit_def>
+  <Hit_accession>P08852</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.001</Hsp_bit-score>
+      <Hsp_score>393</Hsp_score>
+      <Hsp_evalue>5.47651e-52</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKAAWEKIGGHGAAYGAEALERMFLSFPTTKTYFPHFDLSHGSAQIQGHGKKVADALANAAAHVDDLPSALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAW K+G  G   G  A ER    FP TKTY PHF LSHGS Q++G GKKVADA  N  A V D  + LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>58</Hit_num>
+  <Hit_id>sp|Q862A7.3|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pipistrellus abramus]</Hit_def>
+  <Hit_accession>Q862A7</Hit_accession>
+  <Hit_len>143</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.573</Hsp_bit-score>
+      <Hsp_score>392</Hsp_score>
+      <Hsp_evalue>8.26319e-52</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>143</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>7</Hsp_gaps>
+      <Hsp_align-len>146</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFT-LSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKAAWDKVGGHAGDYGAE-ALERMFLSFPTTKTYFPHFSDLSHGSAQVKAHGKKVGDALNNAVGHMDDLPTALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFLANVSTVLVSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV AAW KVG   G+YG E A ER    FP TKTY PHF+ LSHGS Q+K  GKKV DA  N V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKFLA+VSTVL   YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>59</Hit_num>
+  <Hit_id>sp|P01948.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain [Oryctolagus cuniculus]</Hit_def>
+  <Hit_accession>P01948</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.144</Hsp_bit-score>
+      <Hsp_score>391</Hsp_score>
+      <Hsp_evalue>1.01878e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNIKTAWEKIGSHGGEYGAE-AVERMFLGFPTTKTYFPHFDFTHGSEQIKAHGKKVSEALTKAVGHLDDLPGALSTLSDLHAHKLRVDPVNFKLLS-HC-LLVTLANHHPSEFTPAVHASLDKFLANVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  N+  AW K+G+ GGEYG E A ER    FP TKTY PHF  +HGS Q+K  GKKV++A T  V  + D    LS LS LHAH LR DPVNFKLLS HC LLVTLA   P+EFTPAV AS DKFLA+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>60</Hit_num>
+  <Hit_id>sp|P68235.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ursus maritimus] &gt;sp|P68236.2| RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ursus thibetanus] &gt;sp|P68237.2| RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Helarctos malayanus]</Hit_def>
+  <Hit_accession>P68235</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.144</Hsp_bit-score>
+      <Hsp_score>391</Hsp_score>
+      <Hsp_evalue>1.01878e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKSNVKATWDKIGSHAGEYGGE-ALERTFASFPTTKTYFPHFDLSPGSAQVKAHGKKVADALTTAAGHLDDLPGALSALSDLHAHKLRVDPVNFKFLS-HC-LLVTLASHHPAEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV A W K+G+  GEYGGE A ER    FP TKTY PHF LS GS Q+K  GKKVADA T     + D    LSALS LHAH LR DPVNFK LS HC LLVTLA+  PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>61</Hit_num>
+  <Hit_id>sp|P14389.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pteropus alecto]</Hit_def>
+  <Hit_accession>P14389</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.144</Hsp_bit-score>
+      <Hsp_score>391</Hsp_score>
+      <Hsp_evalue>1.03609e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAG-GEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSSTDKSNVKAAWDKVGGHVGEYGAE-ALERMFLSFPTTKTYFPHFDLAHGSSQVKAHGKKVGDALTNAVGHIDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLASHLPSDFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS  D  NV AAW KVG   GEYG E A ER    FP TKTY PHF L+HGS Q+K  GKKV DA TN V  + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA+ LP++FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>62</Hit_num>
+  <Hit_id>sp|P01951.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Talpa europaea]</Hit_def>
+  <Hit_accession>P01951</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.144</Hsp_bit-score>
+      <Hsp_score>391</Hsp_score>
+      <Hsp_evalue>1.03609e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSGTDKSNIKAAWDKVGAHAGEYGAE-ALERTFTSFPTTKTYFPHFDLSHGSAQVKAHGKKVADALTNAVGHLDDLPGAMSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLACHHPNDFTPAVHASLDKFLATVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS  D  N+ AAW KVGA  GEYG E A ER    FP TKTY PHF LSHGS Q+K  GKKVADA TN V  + D    +SALS LHAH LR DPVNFKLLS HC LLVTLA   P +FTPAV AS DKFLA+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>63</Hit_num>
+  <Hit_id>sp|B3EWE3.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha [Microtus pennsylvanicus]</Hit_def>
+  <Hit_accession>B3EWE3</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.144</Hsp_bit-score>
+      <Hsp_score>391</Hsp_score>
+      <Hsp_evalue>1.08715e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSGDDKSNLKTAWGKLGGHAGEYGAE-ALERMFVAYPTTKTYFPHFDVSHGSAQVKGHGKKVADALTTAVGHLDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLANHLPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS  D  N+  AWGK+G   GEYG E A ER    +P TKTY PHF +SHGS Q+KG GKKVADA T  V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA  LPA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>64</Hit_num>
+  <Hit_id>sp|B3EWC9.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha [Otospermophilus beecheyi]</Hit_def>
+  <Hit_accession>B3EWC9</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.144</Hsp_bit-score>
+      <Hsp_score>391</Hsp_score>
+      <Hsp_evalue>1.1271e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKASWEKLGGHGAAYGAEALERMFLSFPTTKTYFPHFDLSHGSAQLQGHGKKVADALANAAAHVDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHLPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV A+W K+G  G   G  A ER    FP TKTY PHF LSHGS QL+G GKKVADA  N  A V D    LSALS LHAH LR DPVNFKLLS HC LLVTLAA LPA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>65</Hit_num>
+  <Hit_id>sp|Q7M2Y4.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Chalinolobus morio]</Hit_def>
+  <Hit_accession>Q7M2Y4</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.144</Hsp_bit-score>
+      <Hsp_score>391</Hsp_score>
+      <Hsp_evalue>1.18266e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVG-AGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKSNVKAAWDKVGGSAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVGDALGNAVAHLDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTVACHHPNDFTPAVHASLDKFLANVSTVLVSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAW KVG + G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKV DA  N VA + D    LSALS LHAH LR DPVNFKLLS HC LLVT+A   P +FTPAV AS DKFLA+VSTVL   YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>66</Hit_num>
+  <Hit_id>sp|P41327.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Lynx lynx]</Hit_def>
+  <Hit_accession>P41327</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>170.716</Hsp_bit-score>
+      <Hsp_score>390</Hsp_score>
+      <Hsp_evalue>1.65622e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>93</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSAADKSNVKACWGKIGSHAGDYGTE-ALERTFCSFPTTKTYFPHFDLSHGSAQVKAHGQKVADALTQAVAHIDDLPNALSALSDLHAYKLRVDPVNFKFLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS AD  NV A WGK+G+  G+YG E A ER    FP TKTY PHF LSHGS Q+K  G+KVADA T  VA + D  N LSALS LHA+ LR DPVNFK LS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>67</Hit_num>
+  <Hit_id>sp|P18971.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Balaenoptera acutorostrata]</Hit_def>
+  <Hit_accession>P18971</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>170.287</Hsp_bit-score>
+      <Hsp_score>389</Hsp_score>
+      <Hsp_evalue>2.14728e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPTDKSNVKATWAKIGNHGAEYGAE-ALERMFMNFPSTKTYFPHFDLGHDSAQVKGHGKKVADALTKAVGHMDNLLDALSDLSDLHAHKLRVDPANFKLLS-HC-LLVTLALHLPAEFTPSVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSP D  NV A W K+G  G EYG E A ER    FP TKTY PHF L H S Q+KG GKKVADA T  V  + +  + LS LS LHAH LR DP NFKLLS HC LLVTLA  LPAEFTP+V AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>68</Hit_num>
+  <Hit_id>sp|P63109.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Panthera onca]</Hit_def>
+  <Hit_accession>P63109</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.859</Hsp_bit-score>
+      <Hsp_score>388</Hsp_score>
+      <Hsp_evalue>3.19309e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSSADKNNVKACWGKIGSHAGEYGAE-ALERTFCSFPTTKTYFPHFDLSHGSAQVQAHGQKVADALTKAVAHINDLPNALSDLSDLHAYKLRVDPVNFKFLS-HC-LLVTLACHHPEEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS AD  NV A WGK+G+  GEYG E A ER    FP TKTY PHF LSHGS Q++  G+KVADA T  VA + D  N LS LS LHA+ LR DPVNFK LS HC LLVTLA   P EFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>69</Hit_num>
+  <Hit_id>sp|P41329.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; AltName: Full=Hemoglobin alpha-I chain [Arctocephalus galapagoensis]</Hit_def>
+  <Hit_accession>P41329</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.859</Hsp_bit-score>
+      <Hsp_score>388</Hsp_score>
+      <Hsp_evalue>3.60103e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNIKTTWDKLGGHAGEYGGE-ALERTFMSFPTTKTYFPHFDLSPGSAQVKAHGKKVADALTTAVAHMDDLPKALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSTVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  N+   W K+G   GEYGGE A ER    FP TKTY PHF LS GS Q+K  GKKVADA T  VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>70</Hit_num>
+  <Hit_id>sp|P01944.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ondatra zibethicus]</Hit_def>
+  <Hit_accession>P01944</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.859</Hsp_bit-score>
+      <Hsp_score>388</Hsp_score>
+      <Hsp_evalue>3.66286e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>93</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQ--LFPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSGEDKNNIKTAWGKIGGHAAEYGAE-ALERMFVVYPTTKTYFPHFDVSHGSGQVKAHGKKVADALTTAVGHLDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLANHIPADFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS  D  N+  AWGK+G    EYG E A ER   ++P TKTY PHF +SHGSGQ+K  GKKVADA T  V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA  +PA+FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>71</Hit_num>
+  <Hit_id>sp|B3EWD5.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha [Peromyscus californicus]</Hit_def>
+  <Hit_accession>B3EWD5</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.859</Hsp_bit-score>
+      <Hsp_score>388</Hsp_score>
+      <Hsp_evalue>3.7974e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSADDKANVKAAWGKLGGHGAEYGAE-ALGRMFCSFPTTKTYFPHFDVSHGSAQVKGHGAKVADALTTAAGHLDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS  D  NV AAWGK+G  G EYG E A  R    FP TKTY PHF +SHGS Q+KG G KVADA T     + D    LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>72</Hit_num>
+  <Hit_id>sp|P01963.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ceratotherium simum]</Hit_def>
+  <Hit_accession>P01963</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.859</Hsp_bit-score>
+      <Hsp_score>388</Hsp_score>
+      <Hsp_evalue>4.1599e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPTDKTNVKTAWGHVGAQAGEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKAHGKKVGDALTQAVGHLDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLALHHPQDFTPAVHASLDKFLSNVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSP D  NV  AWG VGA  GEYG E A ER    FP TKTY PHF LSHGS Q+K  GKKV DA T  V  + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   P +FTPAV AS DKFL++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>73</Hit_num>
+  <Hit_id>sp|P14390.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Pteropus poliocephalus]</Hit_def>
+  <Hit_accession>P14390</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.43</Hsp_bit-score>
+      <Hsp_score>387</Hsp_score>
+      <Hsp_evalue>5.06774e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAG-GEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSSTDKSNVKAAWDKVGGNVGEYGAE-ALERMFLSFPTTKTYFPHFDLAHGSSQVKAHGKKVGDALTNAVGHMDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLANHLPNDFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS  D  NV AAW KVG   GEYG E A ER    FP TKTY PHF L+HGS Q+K  GKKV DA TN V  + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA  LP +FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>74</Hit_num>
+  <Hit_id>sp|P11750.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Urocitellus parryii]</Hit_def>
+  <Hit_accession>P11750</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.43</Hsp_bit-score>
+      <Hsp_score>387</Hsp_score>
+      <Hsp_evalue>5.51272e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKASWEKIGGHGAAYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVQGHGKKVADALANAAAHVDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV A+W K+G  G   G  A ER    FP TKTY PHF LSHGS Q++G GKKVADA  N  A V D    LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>75</Hit_num>
+  <Hit_id>sp|P18969.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Ailurus fulgens]</Hit_def>
+  <Hit_accession>P18969</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.43</Hsp_bit-score>
+      <Hsp_score>387</Hsp_score>
+      <Hsp_evalue>6.03857e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNVKSTWDKLGGHAGEYGGE-ALERTFASFPTTKTYFPHFDLSPGSAQVKAHGKKVADALTLAVGHLDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  NV + W K+G   GEYGGE A ER    FP TKTY PHF LS GS Q+K  GKKVADA T  V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>76</Hit_num>
+  <Hit_id>sp|Q9TSN8.3|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; AltName: Full=Ialpha2 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>Q9TSN8</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.002</Hsp_bit-score>
+      <Hsp_score>386</Hsp_score>
+      <Hsp_evalue>7.05997e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSAADKSNIQAAWGKVGGHAADYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGAKVANALTKAVGHLDDLPGALSELSDLHAHKLRVDPVNFKLLS--HSLLVTLASHLPNDFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS AD  N+ AAWGKVG      G  A ER    FP TKTY PHF LSHGS Q+KG G KVA+A T  V  + D    LS LS LHAH LR DPVNFKLLS    LLVTLA+ LP +FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>77</Hit_num>
+  <Hit_id>sp|Q9XSK1.3|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-4; AltName: Full=Alpha-4-globin; AltName: Full=Hemoglobin alpha-4 chain; AltName: Full=IIalpha4 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>Q9XSK1</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.002</Hsp_bit-score>
+      <Hsp_score>386</Hsp_score>
+      <Hsp_evalue>7.31921e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSAADKSNVKAAWGKVGGHAADYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGAKVANALTKAVGHLDDLPGALSELSDLHAHKLRVDPVNFKLLS--HSLLVTLASHLPNDFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS AD  NV AAWGKVG      G  A ER    FP TKTY PHF LSHGS Q+KG G KVA+A T  V  + D    LS LS LHAH LR DPVNFKLLS    LLVTLA+ LP +FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>78</Hit_num>
+  <Hit_id>sp|P07405.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Felis catus]</Hit_def>
+  <Hit_accession>P07405</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.002</Hsp_bit-score>
+      <Hsp_score>386</Hsp_score>
+      <Hsp_evalue>8.49836e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSAADKSNVKACWGKIGSHAGEYGAE-ALERTFCSFPTTKTYFPHFDLSHGSAQVKAHGQKVADALTQAVAHMDDLPTAMSALSDLHAYKLRVDPVNFKFLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS AD  NV A WGK+G+  GEYG E A ER    FP TKTY PHF LSHGS Q+K  G+KVADA T  VA + D    +SALS LHA+ LR DPVNFK LS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>79</Hit_num>
+  <Hit_id>sp|P07414.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Trichechus inunguis]</Hit_def>
+  <Hit_accession>P07414</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>169.002</Hsp_bit-score>
+      <Hsp_score>386</Hsp_score>
+      <Hsp_evalue>8.70516e-51</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSDEDKTNVKTFWGKIGTHTGEYGGE-ALERMFLSFPTTKTYFPHFDLSHGSGQIKAHGKKVADALTRAVGHLEDLPGTLSELSDLHAHRLRVDPVNFKLLS-HC-LLVTLSSHLREDFTPSVHASLDKFLSSVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS  D  NV   WGK+G   GEYGGE A ER    FP TKTY PHF LSHGSGQ+K  GKKVADA T  V  + D    LS LS LHAH LR DPVNFKLLS HC LLVTL++ L  +FTP+V AS DKFL+SVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>80</Hit_num>
+  <Hit_id>sp|P07403.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Urocitellus townsendii]</Hit_def>
+  <Hit_accession>P07403</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>168.573</Hsp_bit-score>
+      <Hsp_score>385</Hsp_score>
+      <Hsp_evalue>1.23361e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKNNVKACWEKIGGHGAAYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVQGHGKKVADALANAAAHVDDLPSALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV A W K+G  G   G  A ER    FP TKTY PHF LSHGS Q++G GKKVADA  N  A V D  + LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>81</Hit_num>
+  <Hit_id>sp|P01958.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Equus caballus]</Hit_def>
+  <Hit_accession>P01958</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>168.573</Hsp_bit-score>
+      <Hsp_score>385</Hsp_score>
+      <Hsp_evalue>1.43478e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSAADKTNVKAAWSKVGGHAGEYGAE-ALERMFLGFPTTKTYFPHFDLSHGSAQVKAHGKKVGDALTLAVGHLDDLPGALSNLSDLHAHKLRVDPVNFKLLS-HC-LLSTLAVHLPNDFTPAVHASLDKFLSSVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS AD  NV AAW KVG   GEYG E A ER    FP TKTY PHF LSHGS Q+K  GKKV DA T  V  + D    LS LS LHAH LR DPVNFKLLS HC LL TLA  LP +FTPAV AS DKFL+SVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>82</Hit_num>
+  <Hit_id>sp|Q9TVA3.3|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-2; AltName: Full=Alpha-2-globin; AltName: Full=Hemoglobin alpha-2 chain; Contains: RecName: Full=Hemopressin [Equus quagga burchellii]</Hit_def>
+  <Hit_accession>Q9TVA3</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>168.145</Hsp_bit-score>
+      <Hsp_score>384</Hsp_score>
+      <Hsp_evalue>1.48745e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGAG-GEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSAADKTNVKAAWGKVGGNAGEFGAE-ALERMFLGFPTTKTYFPHFDLSHGSAQVKAHGKKVGDALTLAVGHLDDLPGALSNLSDLHAHKLRVDPVNFKLLS-HC-LLSTLAVHLPNDFTPAVHASLDKFLSTVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS AD  NV AAWGKVG   GE+G E A ER    FP TKTY PHF LSHGS Q+K  GKKV DA T  V  + D    LS LS LHAH LR DPVNFKLLS HC LL TLA  LP +FTPAV AS DKFL++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>83</Hit_num>
+  <Hit_id>sp|P10778.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Odobenus rosmarus divergens]</Hit_def>
+  <Hit_accession>P10778</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>168.145</Hsp_bit-score>
+      <Hsp_score>384</Hsp_score>
+      <Hsp_evalue>1.58784e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKTTWDKLGGHAGEYGGE-ALERTFMSFPTTKTYFPHFDLSPGSAQVKAHGKKVADALTTAVAHIDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSTVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV   W K+G   GEYGGE A ER    FP TKTY PHF LS GS Q+K  GKKVADA T  VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>84</Hit_num>
+  <Hit_id>sp|Q9TSN7.3|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; AltName: Full=Ialpha1 [Bubalus bubalis]</Hit_def>
+  <Hit_accession>Q9TSN7</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>168.145</Hsp_bit-score>
+      <Hsp_score>384</Hsp_score>
+      <Hsp_evalue>1.76e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>96</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSAADKSNVQAAWGKVGGHAADYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGAKVAAALTKAVGHLDDLPGALSELSDLHAHKLRVDPVNFKLLS--HSLLVTLASHLPNDFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS AD  NV AAWGKVG      G  A ER    FP TKTY PHF LSHGS Q+KG G KVA A T  V  + D    LS LS LHAH LR DPVNFKLLS    LLVTLA+ LP +FTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>85</Hit_num>
+  <Hit_id>sp|P24659.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1/2; AltName: Full=Alpha-1/2-globin; AltName: Full=Hemoglobin alpha-1/2 chain; AltName: Full=Hemoglobin alpha-I/II chain [Macroderma gigas]</Hit_def>
+  <Hit_accession>P24659</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>168.145</Hsp_bit-score>
+      <Hsp_score>384</Hsp_score>
+      <Hsp_evalue>1.76924e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKANVKAAWDKVGGQAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKAHGKKVGDALSNAAGHLDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLASHHAAEFTPAVHASLDKFLASVGTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV AAW KVG   G+YG E A ER    FP TKTY PHF LSHGS Q+K  GKKV DA +N    + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA+   AEFTPAV AS DKFLASV TVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>86</Hit_num>
+  <Hit_id>sp|P18975.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Panthera leo]</Hit_def>
+  <Hit_accession>P18975</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>168.145</Hsp_bit-score>
+      <Hsp_score>384</Hsp_score>
+      <Hsp_evalue>1.82462e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSSADKNNVKACWGKIGSHAGEYGAE-ALERTFCSFPTTKTYFPHFDLSHGSAQVQAHGQKVADALTKAVVHINDLPNALSDLSDLHAYKLRVDPVNFKFLS-HC-LLVTLACHHPEEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS AD  NV A WGK+G+  GEYG E A ER    FP TKTY PHF LSHGS Q++  G+KVADA T  V  + D  N LS LS LHA+ LR DPVNFK LS HC LLVTLA   P EFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>87</Hit_num>
+  <Hit_id>sp|Q7M3B8.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain; Contains: RecName: Full=Hemopressin [Hapalemur griseus]</Hit_def>
+  <Hit_accession>Q7M3B8</Hit_accession>
+  <Hit_len>140</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>168.145</Hsp_bit-score>
+      <Hsp_score>384</Hsp_score>
+      <Hsp_evalue>1.84359e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>140</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>98</Hsp_positive>
+      <Hsp_gaps>5</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSSADKTNIKTAWGAIGSHAADHGAEALERMFLSFPTTKTYFPHFDMSHGSGQI-AHGKKVADALTNAVGHIDDMPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLASHHPAEFTPAVHASLDKFFAAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS AD  N+  AWG +G+     G  A ER    FP TKTY PHF +SHGSGQ+   GKKVADA TN V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA+  PAEFTPAV AS DKF A+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>88</Hit_num>
+  <Hit_id>sp|P17689.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Martes foina]</Hit_def>
+  <Hit_accession>P17689</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>168.145</Hsp_bit-score>
+      <Hsp_score>384</Hsp_score>
+      <Hsp_evalue>1.87883e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKSTWDKIGGHAGEYGGE-ALERTFVSFPTTKTYFPHFDLSPGSAQVKAHGKKVADALTLAVGHLDDLAGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSTVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV + W K+G   GEYGGE A ER    FP TKTY PHF LS GS Q+K  GKKVADA T  V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>89</Hit_num>
+  <Hit_id>sp|P01971.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Alces alces alces]</Hit_def>
+  <Hit_accession>P01971</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>167.716</Hsp_bit-score>
+      <Hsp_score>383</Hsp_score>
+      <Hsp_evalue>2.34839e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSATDKSNVKAAWGKVGGNAPAYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKAHGEKVANALTKAVGHLDDLPGTLSDLSDLHAHKLRVDPVNFKLLS--HTLLVTLAAHLPSDFTPAVHASLDKFLANVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS  D  NV AAWGKVG      G  A ER    FP TKTY PHF LSHGS Q+K  G+KVA+A T  V  + D    LS LS LHAH LR DPVNFKLLS    LLVTLAA LP++FTPAV AS DKFLA+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>90</Hit_num>
+  <Hit_id>sp|P01966.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Bos taurus]</Hit_def>
+  <Hit_accession>P01966</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>167.716</Hsp_bit-score>
+      <Hsp_score>383</Hsp_score>
+      <Hsp_evalue>2.37678e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSAADKGNVKAAWGKVGGHAAEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGAKVAAALTKAVEHLDDLPGALSELSDLHAHKLRVDPVNFKLLS--HSLLVTLASHLPSDFTPAVHASLDKFLANVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS AD  NV AAWGKVG    EYG E A ER    FP TKTY PHF LSHGS Q+KG G KVA A T  V  + D    LS LS LHAH LR DPVNFKLLS    LLVTLA+ LP++FTPAV AS DKFLA+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>91</Hit_num>
+  <Hit_id>sp|P01965.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Sus scrofa]</Hit_def>
+  <Hit_accession>P01965</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>167.716</Hsp_bit-score>
+      <Hsp_score>383</Hsp_score>
+      <Hsp_evalue>2.72707e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>97</Hsp_positive>
+      <Hsp_gaps>4</Hsp_gaps>
+      <Hsp_align-len>143</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGAGGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSAADKANVKAAWGKVGGQAGAHGAEALERMFLGFPTTKTYFPHFNLSHGSDQVKAHGQKVADALTKAVGHLDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPDDFNPSVHASLDKFLANVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS AD  NV AAWGKVG      G  A ER    FP TKTY PHF LSHGS Q+K  G+KVADA T  V  + D    LSALS LHAH LR DPVNFKLLS HC LLVTLAA  P +F P+V AS DKFLA+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>92</Hit_num>
+  <Hit_id>sp|P18978.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Tursiops truncatus]</Hit_def>
+  <Hit_accession>P18978</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>167.288</Hsp_bit-score>
+      <Hsp_score>382</Hsp_score>
+      <Hsp_evalue>3.63879e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKTNVKGTWSKIGNHSAEYGAE-ALERMFINFPSTKTYFSHFDLGHGSAQIKGHGKKVADALTKAVGHIDNLPDALSELSDLHAHKLRVDPVNFKLLS-HC-LLVTLALHLPADFTPSVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV   W K+G    EYG E A ER    FP TKTY  HF L HGS Q+KG GKKVADA T  V  + +  + LS LS LHAH LR DPVNFKLLS HC LLVTLA  LPA+FTP+V AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>93</Hit_num>
+  <Hit_id>sp|P63110.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Panthera pardus orientalis]</Hit_def>
+  <Hit_accession>P63110</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>167.288</Hsp_bit-score>
+      <Hsp_score>382</Hsp_score>
+      <Hsp_evalue>3.77237e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSSADKNNVKACWGKIGSHAGEYGAE-ALERTFCSFPTTKTYFPHFDLSHGSAQVQAHGQKVADALTKAVAHINDLPNALSDLSDLHAYKLRVDPVNFKFLS-HC-LLVTLACHHPEEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS AD  NV A WGK+G+  GEYG E A ER    FP TKTY PHF LSHGS Q++  G+KVADA T  VA + D  N LS LS LHA+ LR DPVNFK LS HC LLVTLA   P EFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>94</Hit_num>
+  <Hit_id>sp|P15448.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Mellivora capensis]</Hit_def>
+  <Hit_accession>P15448</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>167.288</Hsp_bit-score>
+      <Hsp_score>382</Hsp_score>
+      <Hsp_evalue>4.00597e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPSDKANVKATWDKIGGHAGEYGGE-ALERTFASFPTTKTYFPHFDLSPGSAQVKAHGKKVADALTNAVAHGDDLPMALSTLSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPAEFTPAVHASLDKFFSTVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSP+D  NV A W K+G   GEYGGE A ER    FP TKTY PHF LS GS Q+K  GKKVADA TN VA   D    LS LS LHA+ LR DPVNFKLLS HC LLVTLA   PAEFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>95</Hit_num>
+  <Hit_id>sp|P11755.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-1; AltName: Full=Alpha-1-globin; AltName: Full=Hemoglobin alpha-1 chain [Tadarida brasiliensis]</Hit_def>
+  <Hit_accession>P11755</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.859</Hsp_bit-score>
+      <Hsp_score>381</Hsp_score>
+      <Hsp_evalue>4.91389e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPEDKNNVKAAWSKVGGQAGDYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVGEALTTAVNHMDDLPGALSTLSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHNPGEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSP D  NV AAW KVG   G+YG E A ER    FP TKTY PHF LSHGS Q+KG GKKV +A T  V  + D    LS LS LHA+ LR DPVNFKLLS HC LLVTLA   P EFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>96</Hit_num>
+  <Hit_id>sp|P60530.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Canis latrans]</Hit_def>
+  <Hit_accession>P60530</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.859</Hsp_bit-score>
+      <Hsp_score>381</Hsp_score>
+      <Hsp_evalue>5.31629e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYER--QLFPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSPADKTNIKSTWDKIGGHAGDYGGE-ALDRTFQSFPTTKTYFPHFDLSPGSAQVKAHGKKVADALTTAVAHLDDLPGALSALSDLHAYKLRVDPVNFKLLS-HC-LLVTLACHHPTEFTPAVHASLDKFFTAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLSPAD  N+ + W K+G   G+YGGE A +R  Q FP TKTY PHF LS GS Q+K  GKKVADA T  VA + D    LSALS LHA+ LR DPVNFKLLS HC LLVTLA   P EFTPAV AS DKF  +VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>97</Hit_num>
+  <Hit_id>sp|Q9XSE9.3|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Equus przewalskii]</Hit_def>
+  <Hit_accession>Q9XSE9</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.859</Hsp_bit-score>
+      <Hsp_score>381</Hsp_score>
+      <Hsp_evalue>5.44558e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSAADKTNVKAAWSKVGGHAGEFGAE-ALERMFLGFPTTKTYFPHFDLSHGSAQVKAHGKKVGDALTLAVGHLDDLPGALSNLSDLHAHKLRVDPVNFKLLS-HC-LLSTLAVHLPNDFTPAVHASLDKFLSSVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS AD  NV AAW KVG   GE+G E A ER    FP TKTY PHF LSHGS Q+K  GKKV DA T  V  + D    LS LS LHAH LR DPVNFKLLS HC LL TLA  LP +FTPAV AS DKFL+SVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>98</Hit_num>
+  <Hit_id>sp|P09423.2|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha-I/II; AltName: Full=Alpha-I/II-globin; AltName: Full=Hemoglobin alpha-I/II chain [Bison bonasus]</Hit_def>
+  <Hit_accession>P09423</Hit_accession>
+  <Hit_len>142</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.859</Hsp_bit-score>
+      <Hsp_score>381</Hsp_score>
+      <Hsp_evalue>6.06739e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>142</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>94</Hsp_identity>
+      <Hsp_positive>99</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>145</Hsp_align-len>
+      <Hsp_qseq>MVLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>MVLSAADKGNVKAAWGKVGGHAAEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGAKVAAALTKAVGHLDDLPGALSELSDLHAHKLRVDPVNFKLLS--HSLLVTLASHLPNDFTPAVHASLDKFLANVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>MVLS AD  NV AAWGKVG    EYG E A ER    FP TKTY PHF LSHGS Q+KG G KVA A T  V  + D    LS LS LHAH LR DPVNFKLLS    LLVTLA+ LP +FTPAV AS DKFLA+VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>99</Hit_num>
+  <Hit_id>sp|P09420.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Spermophilus citellus]</Hit_def>
+  <Hit_accession>P09420</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.431</Hsp_bit-score>
+      <Hsp_score>380</Hsp_score>
+      <Hsp_evalue>6.71586e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>99</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSPADKKNVKDCWEKIGGHGAEYGAE-ALERMFLSFPTTKTYFPHFDLSHGSAQVQGHGKKVADALANAAAHVDDLPGALSALSDLHAHKLRVDPVNFKLLS-HC-LLVTLAAHHPAEFTPAVHASLDKFLASVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLSPAD  NV   W K+G  G EYG E A ER    FP TKTY PHF LSHGS Q++G GKKVADA  N  A V D    LSALS LHAH LR DPVNFKLLS HC LLVTLAA  PAEFTPAV AS DKFLASVSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>100</Hit_num>
+  <Hit_id>sp|P18976.1|</Hit_id>
+  <Hit_def>RecName: Full=Hemoglobin subunit alpha; AltName: Full=Alpha-globin; AltName: Full=Hemoglobin alpha chain; Contains: RecName: Full=Hemopressin [Panthera pardus saxicolor]</Hit_def>
+  <Hit_accession>P18976</Hit_accession>
+  <Hit_len>141</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>166.431</Hsp_bit-score>
+      <Hsp_score>380</Hsp_score>
+      <Hsp_evalue>7.85119e-50</Hsp_evalue>
+      <Hsp_query-from>2</Hsp_query-from>
+      <Hsp_query-to>142</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>141</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>100</Hsp_positive>
+      <Hsp_gaps>6</Hsp_gaps>
+      <Hsp_align-len>144</Hsp_align-len>
+      <Hsp_qseq>VLSPADVLNVMAAWGKVGA-GGEYGGESAYERQL--FPMTKTYSPHFTLSHGSGQLKGSGKKVADATTNYVAIVVDKKNELSALSILHAHHLRRDPVNFKLLSIHCVLLVTLAAPLPAEFTPAVIASDDKFLASVSTVLTCMYR</Hsp_qseq>
+      <Hsp_hseq>VLSSADKNNVKACWGKIGSHAGEYGAE-ALERTFCSFPTTKTYFPHFDLSHGSAQVQTHGQKVADALTKAVAHINDLPNALSDLSDLHAYKLRVDPVNFKFLS-HC-LLVTLACHHPEEFTPAVHASLDKFFSAVSTVLTSKYR</Hsp_hseq>
+      <Hsp_midline>VLS AD  NV A WGK+G+  GEYG E A ER    FP TKTY PHF LSHGS Q++  G+KVADA T  VA + D  N LS LS LHA+ LR DPVNFK LS HC LLVTLA   P EFTPAV AS DKF ++VSTVLT  YR</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>486626</Statistics_db-num>
+      <Statistics_db-len>185539472</Statistics_db-len>
+      <Statistics_hsp-len>66</Statistics_hsp-len>
+      <Statistics_eff-space>11660083856</Statistics_eff-space>
+      <Statistics_kappa>0.082</Statistics_kappa>
+      <Statistics_lambda>0.297</Statistics_lambda>
+      <Statistics_entropy>0.27</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
