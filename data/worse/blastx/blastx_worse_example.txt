@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<BlastOutput>
+  <BlastOutput_program>blastx</BlastOutput_program>
+  <BlastOutput_version>BLASTX 2.17.0+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>/blastdisk3/bit_group/web/blast/database/ncbi/swissprot/swissprot</BlastOutput_db>
+  <BlastOutput_query-ID>Query_1</BlastOutput_query-ID>
+  <BlastOutput_query-def>ncov_seq</BlastOutput_query-def>
+  <BlastOutput_query-len>839</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>0.05</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>2</Parameters_gap-extend>
+      <Parameters_filter>L;</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_1</Iteration_query-ID>
+  <Iteration_query-def>ncov_seq</Iteration_query-def>
+  <Iteration_query-len>839</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>sp|P0DTC1.1|</Hit_id>
+  <Hit_def>RecName: Full=Replicase polyprotein 1a; Short=pp1a; AltName: Full=ORF1a polyprotein; Contains: RecName: Full=Host translation inhibitor nsp1; AltName: Full=Leader protein; AltName: Full=Non-structural protein 1; Short=nsp1; Contains: RecName: Full=Non-structural protein 2; Short=nsp2; AltName: Full=p65 homolog; Contains: RecName: Full=Papain-like protease nsp3; AltName: Full=Non-structural protein 3; Short=nsp3; AltName: Full=PL2-PRO; AltName: Full=Papain-like proteinase; Short=PL-PRO; Contains: RecName: Full=Non-structural protein 4; Short=nsp4; Contains: RecName: Full=3C-like proteinase nsp5; Short=3CL-PRO; Short=3CLp; AltName: Full=Main protease; Short=Mpro; AltName: Full=Non-structural protein 5; Short=nsp5; AltName: Full=SARS coronavirus main proteinase; Contains: RecName: Full=Non-structural protein 6; Short=nsp6; Contains: RecName: Full=Non-structural protein 7; Short=nsp7; Contains: RecName: Full=Non-structural protein 8; Short=nsp8; Contains: RecName: Full=RNA-capping enzyme subunit nsp9; AltName: Full=Non-structural protein 9; Short=nsp9; Contains: RecName: Full=Non-structural protein 10; Short=nsp10; AltName: Full=Growth factor-like peptide; Short=GFL; Contains: RecName: Full=Non-structural protein 11; Short=nsp11 [Severe acute respiratory syndrome coronavirus 2]</Hit_def>
+  <Hit_accession>P0DTC1</Hit_accession>
+  <Hit_len>4405</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8854</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00213562</Hsp_evalue>
+      <Hsp_query-from>117</Hsp_query-from>
+      <Hsp_query-to>323</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>113</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>HPQRATCS*SRICRRSFAST*TPDVFIKRSEARTAPYCLLW*VRSSELGGIR*GGSGEKAWCPAPPMGE</Hsp_qseq>
+      <Hsp_hseq>HLKDGTCGLVEVEKGVLPQLEQPYVFIKRSDARTAPHGHVMVELVAELEGIQYGRSGETLGVLVPHVGE</Hsp_hseq>
+      <Hsp_midline>H +  TC    + +        P VFIKRS+ARTAP+  +     +EL GI+ G SGE      P +GE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>sp|P0DTD1.1|</Hit_id>
+  <Hit_def>RecName: Full=Replicase polyprotein 1ab; Short=pp1ab; AltName: Full=ORF1ab polyprotein; Contains: RecName: Full=Host translation inhibitor nsp1; AltName: Full=Leader protein; AltName: Full=Non-structural protein 1; Short=nsp1; Contains: RecName: Full=Non-structural protein 2; Short=nsp2; AltName: Full=p65 homolog; Contains: RecName: Full=Papain-like protease nsp3; AltName: Full=Non-structural protein 3; Short=nsp3; AltName: Full=PL2-PRO; AltName: Full=Papain-like proteinase; Short=PL-PRO; Contains: RecName: Full=Non-structural protein 4; Short=nsp4; Contains: RecName: Full=3C-like proteinase nsp5; Short=3CL-PRO; Short=3CLp; AltName: Full=Main protease; Short=Mpro; AltName: Full=Non-structural protein 5; Short=nsp5; AltName: Full=SARS coronavirus main proteinase; Contains: RecName: Full=Non-structural protein 6; Short=nsp6; Contains: RecName: Full=Non-structural protein 7; Short=nsp7; Contains: RecName: Full=Non-structural protein 8; Short=nsp8; Contains: RecName: Full=Viral protein genome-linked nsp9; AltName: Full=Non-structural protein 9; Short=nsp9; AltName: Full=RNA-capping enzyme subunit nsp9; Contains: RecName: Full=Non-structural protein 10; Short=nsp10; AltName: Full=Growth factor-like peptide; Short=GFL; Contains: RecName: Full=RNA-directed RNA polymerase nsp12; Short=Pol; Short=RdRp; AltName: Full=Non-structural protein 12; Short=nsp12; Contains: RecName: Full=Helicase nsp13; Short=Hel; AltName: Full=Non-structural protein 13; Short=nsp13; Contains: RecName: Full=Guanine-N7 methyltransferase nsp14; AltName: Full=Non-structural protein 14; Short=nsp14; AltName: Full=Proofreading exoribonuclease nsp14; Short=ExoN; Contains: RecName: Full=Uridylate-specific endoribonuclease nsp15; AltName: Full=NendoU; AltName: Full=Non-structural protein 15; Short=nsp15; Contains: RecName: Full=2&apos;-O-methyltransferase nsp16; AltName: Full=Non-structural protein 16; Short=nsp16 [Severe acute respiratory syndrome coronavirus 2]</Hit_def>
+  <Hit_accession>P0DTD1</Hit_accession>
+  <Hit_len>7096</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>43.8854</Hsp_bit-score>
+      <Hsp_score>94</Hsp_score>
+      <Hsp_evalue>0.00215254</Hsp_evalue>
+      <Hsp_query-from>117</Hsp_query-from>
+      <Hsp_query-to>323</Hsp_query-to>
+      <Hsp_hit-from>45</Hsp_hit-from>
+      <Hsp_hit-to>113</Hsp_hit-to>
+      <Hsp_query-frame>3</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>26</Hsp_identity>
+      <Hsp_positive>35</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>69</Hsp_align-len>
+      <Hsp_qseq>HPQRATCS*SRICRRSFAST*TPDVFIKRSEARTAPYCLLW*VRSSELGGIR*GGSGEKAWCPAPPMGE</Hsp_qseq>
+      <Hsp_hseq>HLKDGTCGLVEVEKGVLPQLEQPYVFIKRSDARTAPHGHVMVELVAELEGIQYGRSGETLGVLVPHVGE</Hsp_hseq>
+      <Hsp_midline>H +  TC    + +        P VFIKRS+ARTAP+  +     +EL GI+ G SGE      P +GE</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>486626</Statistics_db-num>
+      <Statistics_db-len>185539472</Statistics_db-len>
+      <Statistics_hsp-len>70</Statistics_hsp-len>
+      <Statistics_eff-space>31658411268</Statistics_eff-space>
+      <Statistics_kappa>0.082</Statistics_kappa>
+      <Statistics_lambda>0.297</Statistics_lambda>
+      <Statistics_entropy>0.27</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+

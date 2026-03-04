@@ -5,8 +5,8 @@ BLAST解析器测试
 import pytest
 from pathlib import Path
 
-from src.parsers.parser_factory import ParserFactory
-from src.models.blast_result import BlastProgram
+from blast_summary.parsers.parser_factory import ParserFactory
+from blast_summary.models.blast_result import BlastProgram
 
 
 # 测试数据路径
