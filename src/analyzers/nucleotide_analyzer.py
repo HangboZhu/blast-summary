@@ -7,7 +7,7 @@
 from typing import Dict, Any, List
 from .base_analyzer import BaseAnalyzer
 from ..models.blast_result import BlastResult, HSP
-from ..utils.statistics import analyze_species_distribution
+from ..utils.statistics import analyze_species_distribution, format_hits_table
 
 
 class NucleotideAnalyzer(BaseAnalyzer):
@@ -46,41 +46,39 @@ class NucleotideAnalyzer(BaseAnalyzer):
         lines = []
         lines.append(f"## blastn 分析报告")
         lines.append(f"")
-        lines.append(f"### 查询序列信息")
-        lines.append(f"- 序列ID: {self.result.query_id}")
-        lines.append(f"- 序列描述: {self.result.query_def}")
-        lines.append(f"- 序列长度: {self.result.query_len} bp")
-        lines.append(f"")
-        lines.append(f"### 比对统计")
-        stats = self.statistics
-        lines.append(f"- 总命中数: {stats['total_hits']}")
-        lines.append(f"- 总HSP数: {stats['total_hsps']}")
-        lines.append(f"- 平均一致性: {stats['avg_identity']}%")
-        lines.append(f"- 最高一致性: {stats['max_identity']}%")
-        lines.append(f"- 最小E值: {stats['min_evalue']}")
-        lines.append(f"- 覆盖度: {stats['coverage_percent']}%")
-        lines.append(f"")
 
-        # 最佳命中
-        if self.result.best_hit and self.result.best_hit.best_hsp:
-            best = self.result.best_hit
-            hsp = best.best_hsp
-            lines.append(f"### 最佳命中")
-            lines.append(f"- 登录号: {best.accession}")
-            lines.append(f"- 描述: {best.definition[:80]}...")
-            lines.append(f"- 比对得分: {hsp.bit_score}")
-            lines.append(f"- E值: {hsp.evalue}")
-            lines.append(f"- 一致性: {hsp.identity_percent:.2f}%")
-            lines.append(f"- 比对长度: {hsp.align_len} bp")
-            lines.append(f"")
+        # 高得分比对表格
+        lines.append(f"### 高得分比对")
+        lines.append(f"")
+        lines.append(format_hits_table(self.result, 5))
+        lines.append(f"")
 
         # 物种分布
         species = self._analyze_species()
         if species:
             lines.append(f"### 物种分布")
+            lines.append(f"")
             for sp, count in list(species.items())[:5]:
                 lines.append(f"- {sp}: {count}次命中")
+            if len(species) > 5:
+                lines.append(f"- 其他: {len(species) - 5}个物种")
             lines.append(f"")
+
+            # 进化推断
+            evolution = self._analyze_evolution()
+            if evolution.get("conservation_level"):
+                lines.append(f"### 进化推断")
+                lines.append(f"")
+                lines.append(f"- 保守程度: {evolution['conservation_level']}")
+                lines.append(f"")
+
+        # 质量评估
+        quality = self._assess_quality()
+        lines.append(f"### 质量评估")
+        lines.append(f"")
+        lines.append(f"- 覆盖度质量: {quality['coverage_quality']}")
+        lines.append(f"- 显著性: {quality['significance']}")
+        lines.append(f"- 综合评价: {quality['overall_quality']}")
 
         return "\n".join(lines)
 

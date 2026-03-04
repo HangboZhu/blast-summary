@@ -148,11 +148,8 @@ def combine_reports(basic_summary: str, ai_summary: str) -> str:
 
     if ai_summary:
         report_parts.append("\n---\n")
-        report_parts.append("## AI生物学解释\n")
+        report_parts.append("## 生物学解释\n")
         report_parts.append(ai_summary)
-
-    report_parts.append("\n\n---\n")
-    report_parts.append("*报告由BLAST AI总结工具生成*\n")
 
     return "\n".join(report_parts)
 

@@ -7,7 +7,7 @@
 from typing import Dict, Any, List, Optional
 from .base_analyzer import BaseAnalyzer
 from ..models.blast_result import BlastResult, BlastProgram, HSP
-from ..utils.statistics import analyze_species_distribution
+from ..utils.statistics import analyze_species_distribution, format_hits_table
 
 
 class ProteinAnalyzer(BaseAnalyzer):
@@ -48,56 +48,42 @@ class ProteinAnalyzer(BaseAnalyzer):
         lines = []
         lines.append(f"## {blast_type} 分析报告")
         lines.append(f"")
-        lines.append(f"### 查询序列信息")
-        lines.append(f"- 序列ID: {self.result.query_id}")
-        lines.append(f"- 序列描述: {self.result.query_def}")
-        lines.append(f"- 序列长度: {self.result.query_len} aa")
+
+        # 高得分比对表格
+        lines.append(f"### 高得分比对")
         lines.append(f"")
-        lines.append(f"### 比对统计")
-        stats = self.statistics
-        lines.append(f"- 总命中数: {stats['total_hits']}")
-        lines.append(f"- 总HSP数: {stats['total_hsps']}")
-        lines.append(f"- 平均一致性: {stats['avg_identity']}%")
-        lines.append(f"- 最高一致性: {stats['max_identity']}%")
-        lines.append(f"- 最小E值: {stats['min_evalue']}")
-        lines.append(f"- 覆盖度: {stats['coverage_percent']}%")
-
-        if "avg_positive" in stats:
-            lines.append(f"- 平均相似度: {stats['avg_positive']}%")
-
+        lines.append(format_hits_table(self.result, 5))
         lines.append(f"")
-
-        # 最佳命中
-        if self.result.best_hit and self.result.best_hit.best_hsp:
-            best = self.result.best_hit
-            hsp = best.best_hsp
-            lines.append(f"### 最佳命中")
-            lines.append(f"- 登录号: {best.accession}")
-            lines.append(f"- 描述: {best.definition[:80]}...")
-            lines.append(f"- 比对得分: {hsp.bit_score}")
-            lines.append(f"- E值: {hsp.evalue}")
-            lines.append(f"- 一致性: {hsp.identity_percent:.2f}%")
-            if hsp.positive:
-                lines.append(f"- 相似度: {hsp.positive_percent:.2f}%")
-            lines.append(f"- 比对长度: {hsp.align_len} aa")
-            lines.append(f"")
 
         # 阅读框分析（blastx/tblastn）
         if self._needs_frame_analysis():
             frame_info = self._analyze_frames()
             if frame_info:
                 lines.append(f"### 阅读框分析")
+                lines.append(f"")
                 lines.append(f"- 主要阅读框: {frame_info.get('primary_frame', 'N/A')}")
-                lines.append(f"- 阅读框分布: {frame_info.get('frame_distribution', {})}")
+                lines.append(f"- 链方向: {frame_info.get('strand', 'N/A')}")
                 lines.append(f"")
 
         # 功能预测
         func_pred = self._predict_function()
         if func_pred.get("predicted_function"):
             lines.append(f"### 功能预测")
+            lines.append(f"")
             lines.append(f"- 预测功能: {func_pred.get('predicted_function', 'N/A')}")
+            if func_pred.get("protein_family"):
+                lines.append(f"- 蛋白质家族: {func_pred.get('protein_family')}")
             lines.append(f"- 置信度: {func_pred.get('confidence', 'N/A')}")
             lines.append(f"")
+
+        # 质量评估
+        quality = self._assess_quality()
+        lines.append(f"### 质量评估")
+        lines.append(f"")
+        lines.append(f"- 覆盖度质量: {quality['coverage_quality']}")
+        lines.append(f"- 显著性: {quality['significance']}")
+        lines.append(f"- 相似度评估: {quality['similarity_quality']}")
+        lines.append(f"- 综合评价: {quality['overall_quality']}")
 
         return "\n".join(lines)
 

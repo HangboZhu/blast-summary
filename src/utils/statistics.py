@@ -166,3 +166,87 @@ def _extract_species(definition: str) -> Optional[str]:
     if match:
         return match.group(1)
     return None
+
+
+def format_hits_table(result: BlastResult, n: int = 5) -> str:
+    """
+    格式化命中结果为Markdown表格
+
+    Args:
+        result: BLAST结果对象
+        n: 展示的命中数量（默认5条）
+
+    Returns:
+        Markdown格式的表格字符串
+    """
+    from ..models.blast_result import BlastProgram
+
+    if not result.hits:
+        return "无命中结果"
+
+    top_hits = result.get_top_hits(n)
+    if not top_hits:
+        return "无命中结果"
+
+    lines = []
+
+    # 根据BLAST类型确定表头
+    is_protein_blast = result.program in [
+        BlastProgram.BLASTP,
+        BlastProgram.BLASTX,
+        BlastProgram.TBLASTN
+    ]
+
+    if is_protein_blast:
+        # 蛋白质BLAST：增加相似度列
+        header = "| 排名 | 登录号 | 描述 | 得分 | E值 | 一致性 | 相似度 |"
+        separator = "|------|--------|------|------|-----|--------|--------|"
+    else:
+        # 核苷酸BLAST
+        header = "| 排名 | 登录号 | 描述 | 得分 | E值 | 一致性 |"
+        separator = "|------|--------|------|------|-----|--------|"
+
+    lines.append(header)
+    lines.append(separator)
+
+    for rank, hit in enumerate(top_hits, 1):
+        best_hsp = hit.best_hsp
+        if best_hsp is None:
+            continue
+
+        # 截断描述
+        definition = _truncate_definition(hit.definition, 50)
+
+        # 格式化E值
+        evalue_str = _format_evalue(best_hsp.evalue)
+
+        # 格式化得分
+        score_str = f"{best_hsp.bit_score:.1f}"
+
+        # 格式化一致性
+        identity_str = f"{best_hsp.identity_percent:.1f}%"
+
+        if is_protein_blast:
+            # 蛋白质BLAST包含相似度
+            positive_str = f"{best_hsp.positive_percent:.1f}%" if best_hsp.positive_percent else "N/A"
+            row = f"| {rank} | {hit.accession} | {definition} | {score_str} | {evalue_str} | {identity_str} | {positive_str} |"
+        else:
+            row = f"| {rank} | {hit.accession} | {definition} | {score_str} | {evalue_str} | {identity_str} |"
+
+        lines.append(row)
+
+    return "\n".join(lines)
+
+
+def _format_evalue(evalue: float) -> str:
+    """格式化E值显示"""
+    if evalue == 0:
+        return "0.0"
+    elif evalue < 1e-100:
+        return f"{evalue:.0e}"
+    elif evalue < 0.01:
+        return f"{evalue:.2e}"
+    elif evalue < 1:
+        return f"{evalue:.4f}"
+    else:
+        return f"{evalue:.2f}"
