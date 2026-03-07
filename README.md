@@ -64,16 +64,19 @@ OPENAI_MODEL=ERNIE-Bot-turbo-0922
 ### 基本用法
 
 ```bash
-# 分析BLAST结果并生成报告
+# Analyze blastp result
 blast-summary -i data/blastp/blastp_example.txt
 
-# 指定输出文件路径
+# Analyze with species information file
+blast-summary -i data/blastp/blastp_5.txt -s data/blastp/blastp_18.txt
+
+# Specify output file
 blast-summary -i data/blastn/blastn_example.txt -o output/report.md
 
-# 输出到标准输出
+# Output to stdout
 blast-summary -i data/blastx/blastx_example.txt --stdout
 
-# 跳过AI分析，仅生成基础报告
+# Skip AI analysis
 blast-summary -i data/tblastn/tblastn_example.txt --no-ai
 ```
 
@@ -83,6 +86,7 @@ blast-summary -i data/tblastn/tblastn_example.txt --no-ai
 |------|------|------|
 | `--input` | `-i` | 输入BLAST XML文件路径（必填） |
 | `--output` | `-o` | 输出文件路径（可选，默认自动生成） |
+| `--species_file`| `-s`| 输入含有物种信息的文件，blast *_18模式生成|
 | `--env-file` | - | 指定.env配置文件路径（可选） |
 | `--no-ai` | - | 跳过AI分析，仅生成基础报告 |
 | `--stdout` | - | 输出到标准输出而非文件 |
@@ -92,7 +96,8 @@ blast-summary -i data/tblastn/tblastn_example.txt --no-ai
 使用提供的脚本批量处理多个BLAST结果：
 
 ```bash
-bash run_summary.sh
+bash scripts/batch_process_ai.sh # with ai
+bash scripts/batch_process.sh # no ai
 ```
 
 ## 输出报告
