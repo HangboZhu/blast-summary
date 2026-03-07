@@ -174,10 +174,11 @@ def main():
     worse_dir.mkdir(exist_ok=True)
 
     file_mappings = {
-        'blastn_original.fasta': 'blastn_worse.fasta',
-        'blastp_original.fasta': 'blastp_worse.fasta',
-        'blastx_original.fasta': 'blastx_worse.fasta',
-        'tblastn_original.fasta': 'tblastn_worse.fasta',
+        # 'blastn_original.fasta': 'blastn_worse.fasta',
+        # 'blastp_original.fasta': 'blastp_worse.fasta',
+        # 'blastx_original.fasta': 'blastx_worse.fasta',
+        # 'tblastn_original.fasta': 'tblastn_worse.fasta',
+        "tblastx_original.fasta": 'tblastx_worse.fasta',
     }
 
     print("=" * 60)

@@ -10,6 +10,7 @@ from .blastn_parser import BlastnParser
 from .blastp_parser import BlastpParser
 from .blastx_parser import BlastxParser
 from .tblastn_parser import TblastnParser
+from .tblastx_parser import TblastxParser
 from ..models.blast_result import BlastProgram, BlastResult
 
 
@@ -26,6 +27,7 @@ class ParserFactory:
         BlastProgram.BLASTP: BlastpParser,
         BlastProgram.BLASTX: BlastxParser,
         BlastProgram.TBLASTN: TblastnParser,
+        BlastProgram.TBLASTX: TblastxParser,
     }
 
     @classmethod
@@ -66,6 +68,7 @@ class ParserFactory:
             "blastp": BlastProgram.BLASTP,
             "blastx": BlastProgram.BLASTX,
             "tblastn": BlastProgram.TBLASTN,
+            "tblastx": BlastProgram.TBLASTX,
         }
         program = program_map.get(program_name.lower())
         if program is None:
