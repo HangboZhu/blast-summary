@@ -130,6 +130,7 @@ class Hit:
         definition: 序列描述
         length: 序列长度
         hsps: HSP列表
+        species: 物种信息（可选，从物种文件解析）
     """
     num: int
     id: str
@@ -137,6 +138,7 @@ class Hit:
     definition: str
     length: int
     hsps: List[HSP] = field(default_factory=list)
+    species: Optional[str] = None
 
     @property
     def best_hsp(self) -> Optional[HSP]:
@@ -170,6 +172,7 @@ class Hit:
             "accession": self.accession,
             "definition": self.definition,
             "length": self.length,
+            "species": self.species,
             "total_hsps": self.total_hsps,
             "best_bit_score": self.best_hsp.bit_score if self.best_hsp else None,
             "best_evalue": self.best_hsp.evalue if self.best_hsp else None

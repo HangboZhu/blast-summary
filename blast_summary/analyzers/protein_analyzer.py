@@ -7,7 +7,7 @@
 from typing import Dict, Any, List, Optional
 from .base_analyzer import BaseAnalyzer
 from ..models.blast_result import BlastResult, BlastProgram, HSP
-from ..utils.statistics import analyze_species_distribution, format_hits_table
+from ..utils.statistics import analyze_species_distribution, format_hits_table, format_blast_params
 
 
 class ProteinAnalyzer(BaseAnalyzer):
@@ -48,6 +48,9 @@ class ProteinAnalyzer(BaseAnalyzer):
         lines = []
         lines.append(f"## {blast_type} 分析报告")
         lines.append(f"")
+
+        # BLAST 参数信息
+        lines.append(format_blast_params(self.result))
 
         # 高得分比对表格
         lines.append(f"### 高得分比对")

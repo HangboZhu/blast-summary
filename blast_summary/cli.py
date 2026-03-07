@@ -16,6 +16,8 @@ from .analyzers.nucleotide_analyzer import NucleotideAnalyzer
 from .analyzers.protein_analyzer import ProteinAnalyzer
 from .ai.openai_client import create_ai_client
 from .models.blast_result import BlastProgram
+from .utils.species_parser import parse_species_file
+from .utils.statistics import format_blast_params
 
 
 def main():
@@ -40,6 +42,37 @@ def main():
     except Exception as e:
         print(f"Error: Failed to parse BLAST file - {e}")
         sys.exit(1)
+
+    # Check for no hits
+    if not result.hits:
+        print("No hits found, generating empty report")
+        no_hits_report = generate_no_hits_report(result)
+        output_path = determine_output_path(args, result, config)
+
+        if args.stdout:
+            print("\n" + "=" * 60)
+            print(no_hits_report)
+        else:
+            save_report(no_hits_report, output_path)
+            print(f"\nReport saved to: {output_path}")
+
+        return 0
+
+    # Parse species file if provided
+    species_map = {}
+    if args.species_file:
+        print(f"Parsing species file: {args.species_file}")
+        try:
+            species_map = parse_species_file(args.species_file)
+            print(f"Found {len(species_map)} species mappings")
+
+            # Map species to hits
+            for hit in result.hits:
+                if hit.accession in species_map:
+                    hit.species = species_map[hit.accession]
+        except Exception as e:
+            print(f"Warning: Failed to parse species file - {e}")
+            # Continue without species information
 
     # Create analyzer
     analyzer = create_analyzer(result)
@@ -91,6 +124,9 @@ Examples:
     # Analyze blastp result
     blast-summary -i data/blastp/blastp_example.txt
 
+    # Analyze with species information file
+    blast-summary -i data/blastp/blastp_5.txt -s data/blastp/blastp_18.txt
+
     # Specify output file
     blast-summary -i data/blastn/blastn_example.txt -o output/report.md
 
@@ -107,6 +143,12 @@ Examples:
         dest="blast_file",
         required=True,
         help="Input BLAST XML file path"
+    )
+
+    parser.add_argument(
+        "-s", "--species_file",
+        dest="species_file",
+        help="Species information file path (Tax BLAST report format, e.g. *_18.txt)"
     )
 
     parser.add_argument(
@@ -141,6 +183,53 @@ def create_analyzer(result):
         return NucleotideAnalyzer(result)
     else:
         return ProteinAnalyzer(result)
+
+
+def generate_no_hits_report(result) -> str:
+    """
+    生成无命中结果的报告
+
+    Args:
+        result: BLAST结果对象
+
+    Returns:
+        报告文本
+    """
+    blast_type = result.program.value.upper()
+
+    lines = [
+        f"## {blast_type} 分析报告",
+        "",
+    ]
+
+    # 添加参数信息
+    lines.append(format_blast_params(result))
+
+    lines.extend([
+        "### 比对结果",
+        "",
+        "**未找到命中结果 (No hits found)**",
+        "",
+        "---",
+        "",
+        "### 结果说明",
+        "",
+        "本次 BLAST 比对未找到任何显著的匹配序列。可能的原因包括：",
+        "",
+        "1. **查询序列质量较差**: 序列可能包含过多未知碱基或测序错误",
+        "2. **数据库覆盖不足**: 目标数据库中可能不存在与查询序列相似的序列",
+        "3. **参数设置过于严格**: E值阈值过小或其他参数限制了匹配范围",
+        "4. **序列类型不匹配**: 例如用核苷酸序列搜索蛋白质数据库",
+        "",
+        "### 建议",
+        "",
+        "- 尝试使用更宽松的 E 值阈值重新搜索",
+        "- 更换或扩大目标数据库范围",
+        "- 检查查询序列是否正确（方向、格式等）",
+        "- 考虑使用其他 BLAST 程序（如 blastx 翻译后搜索）",
+    ])
+
+    return "\n".join(lines)
 
 
 def combine_reports(basic_summary: str, ai_summary: str) -> str:

@@ -6,6 +6,69 @@ from typing import List, Dict, Any, Optional
 from ..models.blast_result import BlastResult, Hit, HSP, BlastProgram
 
 
+def format_blast_params(result: BlastResult) -> str:
+    """
+    格式化 BLAST 参数信息为 Markdown 文本
+
+    Args:
+        result: BLAST结果对象
+
+    Returns:
+        Markdown格式的参数信息
+    """
+    lines = []
+    lines.append("### BLAST 参数信息")
+    lines.append("")
+
+    # 基本信息
+    lines.append("| 参数 | 值 |")
+    lines.append("|------|-----|")
+
+    # 程序和版本
+    lines.append(f"| **程序** | {result.program.value.upper()} |")
+    lines.append(f"| **版本** | {result.version or '未知'} |")
+
+    # 数据库（简化路径，只显示数据库名）
+    db_name = result.database
+    if db_name and '/' in db_name:
+        db_name = db_name.split('/')[-1]
+    lines.append(f"| **数据库** | {db_name or '未知'} |")
+
+    # 查询序列信息
+    lines.append(f"| **查询序列** | {result.query_def or result.query_id or '未知'} |")
+    lines.append(f"| **序列长度** | {result.query_len} bp |")
+
+    # 比对参数
+    params = result.parameters
+    if params:
+        # E值阈值
+        if 'expect' in params:
+            lines.append(f"| **E值阈值** | {params['expect']} |")
+
+        # 矩阵（蛋白质BLAST）
+        if 'matrix' in params:
+            lines.append(f"| **替换矩阵** | {params['matrix']} |")
+
+        # 空位罚分
+        if 'gap-open' in params:
+            gap_open = params['gap-open']
+            gap_extend = params.get('gap-extend', '未知')
+            lines.append(f"| **空位罚分** | 开启: {gap_open}, 延伸: {gap_extend} |")
+
+        # 过滤器
+        if 'filter' in params:
+            filter_val = "开启" if params['filter'].upper() in ('T', 'TRUE', 'F') else "关闭"
+            # 注意：F 通常表示过滤关闭
+            if params['filter'].upper() == 'F':
+                filter_val = "关闭"
+            else:
+                filter_val = "开启"
+            lines.append(f"| **低复杂度过滤** | {filter_val} |")
+
+    lines.append("")
+    return "\n".join(lines)
+
+
 def calculate_statistics(result: BlastResult) -> Dict[str, Any]:
     """
     计算BLAST结果的统计信息
@@ -149,8 +212,13 @@ def analyze_species_distribution(result: BlastResult) -> Dict[str, int]:
     species_count: Dict[str, int] = {}
 
     for hit in result.hits:
-        # 从定义中提取物种名（通常在方括号中）
-        species = _extract_species(hit.definition)
+        # 优先使用 Hit 对象中的 species 字段（来自物种文件）
+        if hit.species:
+            species = hit.species
+        else:
+            # 从定义中提取物种名（通常在方括号中）
+            species = _extract_species(hit.definition)
+
         if species:
             species_count[species] = species_count.get(species, 0) + 1
 
@@ -188,6 +256,9 @@ def format_hits_table(result: BlastResult, n: int = 5) -> str:
 
     lines = []
 
+    # 检查是否有物种信息
+    has_species = any(hit.species for hit in top_hits)
+
     # 根据BLAST类型确定表头
     is_protein_blast = result.program in [
         BlastProgram.BLASTP,
@@ -195,14 +266,21 @@ def format_hits_table(result: BlastResult, n: int = 5) -> str:
         BlastProgram.TBLASTN
     ]
 
-    if is_protein_blast:
-        # 蛋白质BLAST：增加相似度列
-        header = "| 排名 | 登录号 | 描述 | 得分 | E值 | 一致性 | 相似度 |"
-        separator = "|------|--------|------|------|-----|--------|--------|"
+    # 构建表头
+    if has_species:
+        if is_protein_blast:
+            header = "| 排名 | 登录号 | 描述 | 物种 | 得分 | E值 | 一致性 | 相似度 |"
+            separator = "|------|--------|------|------|------|-----|--------|--------|"
+        else:
+            header = "| 排名 | 登录号 | 描述 | 物种 | 得分 | E值 | 一致性 |"
+            separator = "|------|--------|------|------|------|-----|--------|"
     else:
-        # 核苷酸BLAST
-        header = "| 排名 | 登录号 | 描述 | 得分 | E值 | 一致性 |"
-        separator = "|------|--------|------|------|-----|--------|"
+        if is_protein_blast:
+            header = "| 排名 | 登录号 | 描述 | 得分 | E值 | 一致性 | 相似度 |"
+            separator = "|------|--------|------|------|-----|--------|--------|"
+        else:
+            header = "| 排名 | 登录号 | 描述 | 得分 | E值 | 一致性 |"
+            separator = "|------|--------|------|------|-----|--------|"
 
     lines.append(header)
     lines.append(separator)
@@ -216,6 +294,9 @@ def format_hits_table(result: BlastResult, n: int = 5) -> str:
         definition = _escape_markdown_table(hit.definition)
         accession = _escape_markdown_table(hit.accession)
 
+        # 格式化物种信息
+        species_str = _escape_markdown_table(hit.species) if hit.species else "-"
+
         # 格式化E值
         evalue_str = _format_evalue(best_hsp.evalue)
 
@@ -225,12 +306,18 @@ def format_hits_table(result: BlastResult, n: int = 5) -> str:
         # 格式化一致性
         identity_str = f"{best_hsp.identity_percent:.1f}%"
 
-        if is_protein_blast:
-            # 蛋白质BLAST包含相似度
-            positive_str = f"{best_hsp.positive_percent:.1f}%" if best_hsp.positive_percent else "N/A"
-            row = f"| {rank} | {accession} | {definition} | {score_str} | {evalue_str} | {identity_str} | {positive_str} |"
+        if has_species:
+            if is_protein_blast:
+                positive_str = f"{best_hsp.positive_percent:.1f}%" if best_hsp.positive_percent else "N/A"
+                row = f"| {rank} | {accession} | {definition} | {species_str} | {score_str} | {evalue_str} | {identity_str} | {positive_str} |"
+            else:
+                row = f"| {rank} | {accession} | {definition} | {species_str} | {score_str} | {evalue_str} | {identity_str} |"
         else:
-            row = f"| {rank} | {accession} | {definition} | {score_str} | {evalue_str} | {identity_str} |"
+            if is_protein_blast:
+                positive_str = f"{best_hsp.positive_percent:.1f}%" if best_hsp.positive_percent else "N/A"
+                row = f"| {rank} | {accession} | {definition} | {score_str} | {evalue_str} | {identity_str} | {positive_str} |"
+            else:
+                row = f"| {rank} | {accession} | {definition} | {score_str} | {evalue_str} | {identity_str} |"
 
         lines.append(row)
 
