@@ -72,6 +72,65 @@ class OpenAIClient(BaseAIClient):
         except (KeyError, IndexError) as e:
             raise ValueError(f"Invalid AI API response: {str(e)}")
 
+    def chat_stream(self, messages: list, **kwargs):
+        """
+        流式发送聊天请求
+
+        Args:
+            messages: 消息列表
+            **kwargs: 额外参数
+
+        Yields:
+            AI响应文本片段
+        """
+        url = f"{self.base_url}chat/completions"
+
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {self.api_key}"
+        }
+
+        payload = {
+            "model": self.model,
+            "messages": messages,
+            "max_tokens": kwargs.get("max_tokens", self.max_tokens),
+            "temperature": kwargs.get("temperature", self.temperature),
+            "stream": True  # 开启流式传输
+        }
+
+        try:
+            response = requests.post(
+                url, headers=headers, json=payload,
+                timeout=120, stream=True
+            )
+            response.raise_for_status()
+
+            for line in response.iter_lines():
+                if not line:
+                    continue
+
+                line = line.decode('utf-8')
+                if line.startswith('data: '):
+                    data = line[6:]  # 去掉 'data: ' 前缀
+
+                    if data == '[DONE]':
+                        break
+
+                    try:
+                        chunk = json.loads(data)
+                        if 'choices' in chunk and len(chunk['choices']) > 0:
+                            delta = chunk['choices'][0].get('delta', {})
+                            content = delta.get('content', '')
+                            if content:
+                                yield content
+                    except json.JSONDecodeError:
+                        continue
+
+        except requests.exceptions.Timeout:
+            raise TimeoutError("AI API request timed out")
+        except requests.exceptions.RequestException as e:
+            raise ConnectionError(f"AI API request failed: {str(e)}")
+
     def generate_summary(
         self,
         blast_type: str,
@@ -100,6 +159,34 @@ class OpenAIClient(BaseAIClient):
         ]
 
         return self.chat(messages)
+
+    def generate_summary_stream(
+        self,
+        blast_type: str,
+        context: Dict[str, Any]
+    ):
+        """
+        流式生成BLAST结果摘要
+
+        Args:
+            blast_type: BLAST类型
+            context: BLAST结果上下文
+
+        Yields:
+            摘要文本片段
+        """
+        messages = [
+            {
+                "role": "system",
+                "content": self._build_system_prompt(blast_type)
+            },
+            {
+                "role": "user",
+                "content": self._build_user_content(blast_type, context)
+            }
+        ]
+
+        yield from self.chat_stream(messages)
 
     def _build_user_content(self, blast_type: str, context: Dict[str, Any]) -> str:
         """构建用户消息内容"""

@@ -2,6 +2,10 @@
 # 批量处理 BLAST 数据（带 AI 分析）
 # 输出报告结构遵循 demo_data 目录结构：
 # output/{category}/{blast_type}/{job_id}/{job_id}_summary.md
+#
+# 用法:
+#   ./batch_process_ai.sh           # 普通模式
+#   ./batch_process_ai.sh --stream  # 流式模式（实时写入文件）
 
 set -e
 
@@ -18,6 +22,24 @@ success=0
 no_hits=0
 failed=0
 
+# 是否使用流式模式
+STREAM_MODE=""
+
+# 解析命令行参数
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --stream)
+            STREAM_MODE="--stream"
+            shift
+            ;;
+        *)
+            echo "未知参数: $1"
+            echo "用法: $0 [--stream]"
+            exit 1
+            ;;
+    esac
+done
+
 # 项目根目录
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 OUTPUT_DIR="$PROJECT_ROOT/output"
@@ -33,6 +55,9 @@ check_ai_config() {
 
 echo "======================================"
 echo "BLAST 结果批量处理脚本 (带 AI 分析)"
+if [ -n "$STREAM_MODE" ]; then
+    echo "模式: 流式输出"
+fi
 echo "======================================"
 echo ""
 
@@ -76,9 +101,9 @@ for category in good worse non-results; do
 
             # 构建命令（带 AI 分析）
             if [ -f "$species_file" ]; then
-                cmd="blast-summary -i \"$xml_file\" -s \"$species_file\" -o \"$output_file\""
+                cmd="blast-summary -i \"$xml_file\" -s \"$species_file\" -o \"$output_file\" $STREAM_MODE"
             else
-                cmd="blast-summary -i \"$xml_file\" -o \"$output_file\""
+                cmd="blast-summary -i \"$xml_file\" -o \"$output_file\" $STREAM_MODE"
             fi
 
             # 执行命令并捕获输出

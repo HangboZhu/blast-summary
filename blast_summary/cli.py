@@ -81,6 +81,9 @@ def main():
     print("\nGenerating analysis report...")
     basic_summary = analyzer.generate_summary_text()
 
+    # Determine output path early for streaming
+    output_path = determine_output_path(args, result, config)
+
     # Use AI to generate biological interpretation (if API is configured)
     ai_summary = ""
     if config.ai and not args.no_ai:
@@ -89,26 +92,34 @@ def main():
             ai_client = create_ai_client(config)
             if ai_client:
                 context = analyzer.prepare_ai_context()
-                ai_summary = ai_client.generate_summary(
-                    result.program.value,
-                    context
-                )
-                print("AI analysis completed")
+
+                # 流式模式：边生成边写入
+                if args.stream:
+                    ai_summary = generate_ai_summary_stream(
+                        ai_client, result.program.value, context,
+                        basic_summary, output_path, args.stdout
+                    )
+                else:
+                    ai_summary = ai_client.generate_summary(
+                        result.program.value,
+                        context
+                    )
+                    print("AI analysis completed")
         except Exception as e:
             print(f"Warning: AI analysis failed - {e}")
             ai_summary = f"\n\n**AI analysis temporarily unavailable**: {str(e)}"
 
-    # Combine reports
-    full_report = combine_reports(basic_summary, ai_summary)
+    # Combine reports and output (非流式模式或有错误时)
+    if not args.stream or not config.ai or args.no_ai:
+        full_report = combine_reports(basic_summary, ai_summary)
 
-    # Output results
-    output_path = determine_output_path(args, result, config)
-
-    if args.stdout:
-        print("\n" + "=" * 60)
-        print(full_report)
-    else:
-        save_report(full_report, output_path)
+        if args.stdout:
+            print("\n" + "=" * 60)
+            print(full_report)
+        else:
+            save_report(full_report, output_path)
+            print(f"\nReport saved to: {output_path}")
+    elif args.stream and not args.stdout:
         print(f"\nReport saved to: {output_path}")
 
     return 0
@@ -135,6 +146,12 @@ Examples:
 
     # Skip AI analysis
     blast-summary -i data/tblastn/tblastn_example.txt --no-ai
+
+    # Enable streaming output (real-time file writing)
+    blast-summary -i data/blastp/blastp_5.txt --stream
+
+    # Streaming output to stdout
+    blast-summary -i data/blastp/blastp_5.txt --stream --stdout
         """
     )
 
@@ -172,6 +189,12 @@ Examples:
         "--stdout",
         action="store_true",
         help="Output to stdout instead of file"
+    )
+
+    parser.add_argument(
+        "--stream",
+        action="store_true",
+        help="Enable streaming output, write to file in real-time"
     )
 
     return parser.parse_args()
@@ -263,6 +286,70 @@ def save_report(report: str, output_path: Path):
 
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(report)
+
+
+def generate_ai_summary_stream(
+    ai_client,
+    blast_type: str,
+    context: dict,
+    basic_summary: str,
+    output_path: Path,
+    to_stdout: bool
+) -> str:
+    """
+    流式生成 AI 摘要并实时写入文件
+
+    Args:
+        ai_client: AI客户端
+        blast_type: BLAST类型
+        context: AI上下文
+        basic_summary: 基础报告
+        output_path: 输出文件路径
+        to_stdout: 是否输出到标准输出
+
+    Returns:
+        完整的AI摘要文本
+    """
+    # 准备报告头部（基础报告 + AI分隔符）
+    header = basic_summary + "\n---\n\n## 生物学解释\n\n"
+
+    # 确保输出目录存在
+    if not to_stdout:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        # 先写入基础报告头部
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(header)
+        print(f"Streaming to: {output_path}")
+    else:
+        print("\n" + "=" * 60)
+        print(header, end='')
+
+    # 流式生成并写入
+    full_ai_content = ""
+    try:
+        for chunk in ai_client.generate_summary_stream(blast_type, context):
+            full_ai_content += chunk
+
+            if to_stdout:
+                print(chunk, end='', flush=True)
+            else:
+                # 追加写入文件
+                with open(output_path, 'a', encoding='utf-8') as f:
+                    f.write(chunk)
+    except Exception as e:
+        error_msg = f"\n\n**AI analysis failed**: {str(e)}"
+        full_ai_content += error_msg
+        if to_stdout:
+            print(error_msg)
+        elif not to_stdout:
+            with open(output_path, 'a', encoding='utf-8') as f:
+                f.write(error_msg)
+
+    if to_stdout:
+        print()  # 换行
+
+    print("AI analysis completed (streaming)")
+    return full_ai_content
 
 
 if __name__ == "__main__":
