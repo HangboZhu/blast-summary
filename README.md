@@ -90,6 +90,7 @@ blast-summary -i data/tblastn/tblastn_example.txt --no-ai
 | `--env-file` | - | 指定.env配置文件路径（可选） |
 | `--no-ai` | - | 跳过AI分析，仅生成基础报告 |
 | `--stdout` | - | 输出到标准输出而非文件 |
+| `--stream`| - | 是否采用流式输出，便于前端调用(如果指定了的话)|
 
 ### 批量处理
 
