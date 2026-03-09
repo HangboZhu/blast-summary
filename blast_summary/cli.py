@@ -261,7 +261,7 @@ def combine_reports(basic_summary: str, ai_summary: str) -> str:
 
     if ai_summary:
         report_parts.append("\n---\n")
-        report_parts.append("## 生物学解释\n")
+        report_parts.append("## 生物学解释\n\n")
         report_parts.append(ai_summary)
 
     return "\n".join(report_parts)
