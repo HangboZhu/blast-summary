@@ -2,23 +2,52 @@
 配置管理模块
 
 加载和管理环境变量配置，包括API密钥、模型设置等。
+支持多端点配置和故障转移。
 """
 
 import os
 from pathlib import Path
 from dataclasses import dataclass, field
-from typing import Optional
+from typing import Optional, List
 from dotenv import load_dotenv
 
 
 @dataclass
-class AIConfig:
-    """AI API配置"""
+class AIEndpointConfig:
+    """
+    单个API端点配置
+
+    每个端点包含独立的API密钥、URL和模型配置。
+    """
     api_key: str
     base_url: str
     model: str
+    name: str = ""  # 端点名称，用于日志输出
+
+
+@dataclass
+class AIConfig:
+    """
+    AI API配置 - 支持多端点故障转移
+
+    管理多个API端点，当主端点失败时可自动切换到备用端点。
+    """
+    endpoints: List[AIEndpointConfig] = field(default_factory=list)
     max_tokens: int = 4096
     temperature: float = 0.7
+    retry_count: int = 1  # 每个端点的重试次数
+    failover_enabled: bool = True  # 是否启用故障转移
+
+    @property
+    def primary_endpoint(self) -> Optional[AIEndpointConfig]:
+        """获取主端点配置"""
+        return self.endpoints[0] if self.endpoints else None
+
+    def get_endpoint(self, index: int) -> Optional[AIEndpointConfig]:
+        """获取指定索引的端点配置"""
+        if 0 <= index < len(self.endpoints):
+            return self.endpoints[index]
+        return None
 
 
 @dataclass
@@ -54,20 +83,8 @@ class Config:
         if env_path.exists():
             load_dotenv(env_path)
 
-        # 读取AI配置
-        api_key = os.getenv("OPENAI_API_KEY", "")
-        base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
-        model = os.getenv("OPENAI_MODEL", "gpt-4")
-
-        ai_config = None
-        if api_key:
-            ai_config = AIConfig(
-                api_key=api_key,
-                base_url=base_url,
-                model=model,
-                max_tokens=int(os.getenv("OPENAI_MAX_TOKENS", "4096")),
-                temperature=float(os.getenv("OPENAI_TEMPERATURE", "0.7"))
-            )
+        # 解析AI配置
+        ai_config = cls._parse_ai_config()
 
         # 创建配置实例
         config = cls(ai=ai_config)
@@ -79,11 +96,85 @@ class Config:
 
         return config
 
+    @classmethod
+    def _parse_ai_config(cls) -> Optional[AIConfig]:
+        """
+        解析AI配置
+
+        支持两种配置格式：
+        1. 索引式配置（推荐）：OPENAI_API_KEY_0, OPENAI_API_KEY_1, ...
+        2. 旧格式：OPENAI_API_KEY（无后缀，向后兼容）
+
+        Returns:
+            AIConfig实例，如果未配置则返回None
+        """
+        endpoints = []
+        index = 0
+
+        # 尝试解析索引式配置
+        while True:
+            api_key = os.getenv(f"OPENAI_API_KEY_{index}", "")
+            if not api_key:
+                break
+
+            base_url = os.getenv(
+                f"OPENAI_BASE_URL_{index}",
+                "https://api.openai.com/v1"
+            )
+            model = os.getenv(f"OPENAI_MODEL_{index}", "gpt-4")
+
+            endpoints.append(AIEndpointConfig(
+                api_key=api_key,
+                base_url=base_url,
+                model=model,
+                name=f"endpoint_{index}"
+            ))
+            index += 1
+
+        # 如果没有索引式配置，尝试旧格式（向后兼容）
+        if not endpoints:
+            legacy_api_key = os.getenv("OPENAI_API_KEY", "")
+            if legacy_api_key:
+                legacy_base_url = os.getenv(
+                    "OPENAI_BASE_URL",
+                    "https://api.openai.com/v1"
+                )
+                legacy_model = os.getenv("OPENAI_MODEL", "gpt-4")
+
+                endpoints.append(AIEndpointConfig(
+                    api_key=legacy_api_key,
+                    base_url=legacy_base_url,
+                    model=legacy_model,
+                    name="endpoint_0"
+                ))
+
+        # 如果没有配置任何端点，返回None
+        if not endpoints:
+            return None
+
+        # 读取通用参数
+        max_tokens = int(os.getenv("OPENAI_MAX_TOKENS", "4096"))
+        temperature = float(os.getenv("OPENAI_TEMPERATURE", "0.7"))
+        retry_count = int(os.getenv("OPENAI_RETRY_COUNT", "1"))
+        failover_enabled = os.getenv("OPENAI_FAILOVER_ENABLED", "true").lower() == "true"
+
+        return AIConfig(
+            endpoints=endpoints,
+            max_tokens=max_tokens,
+            temperature=temperature,
+            retry_count=retry_count,
+            failover_enabled=failover_enabled
+        )
+
     def validate(self) -> bool:
         """验证配置是否有效"""
         if self.ai is None:
             return False
-        if not self.ai.api_key:
+        if not self.ai.endpoints:
+            return False
+        if not self.ai.primary_endpoint:
+            return False
+        if not self.ai.primary_endpoint.api_key:
             return False
         return True
 

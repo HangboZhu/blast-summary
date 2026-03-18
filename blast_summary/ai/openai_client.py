@@ -1,11 +1,11 @@
 """
 OpenAI兼容客户端
 
-支持OpenAI API及兼容接口（如百度千帆）。
+支持OpenAI API及兼容接口（如百度千帆），并支持多端点故障转移。
 """
 
 import json
-from typing import Dict, Any, Optional, List
+from typing import Dict, Any, Optional, List, Generator
 import requests
 
 from .base_client import BaseAIClient
@@ -72,7 +72,7 @@ class OpenAIClient(BaseAIClient):
         except (KeyError, IndexError) as e:
             raise ValueError(f"Invalid AI API response: {str(e)}")
 
-    def chat_stream(self, messages: list, **kwargs):
+    def chat_stream(self, messages: list, **kwargs) -> Generator[str, None, None]:
         """
         流式发送聊天请求
 
@@ -164,7 +164,7 @@ class OpenAIClient(BaseAIClient):
         self,
         blast_type: str,
         context: Dict[str, Any]
-    ):
+    ) -> Generator[str, None, None]:
         """
         流式生成BLAST结果摘要
 
@@ -273,7 +273,164 @@ class OpenAIClient(BaseAIClient):
         raise last_error or Exception("Failed to generate summary")
 
 
-def create_ai_client(config) -> Optional[OpenAIClient]:
+class FailoverAIClient:
+    """
+    支持故障转移的AI客户端
+
+    当主端点失败时（超时、连接错误等），自动切换到备用端点重试。
+    """
+
+    def __init__(self, ai_config):
+        """
+        初始化故障转移客户端
+
+        Args:
+            ai_config: AIConfig实例，包含多个端点配置
+        """
+        self.config = ai_config
+        self._clients: List[OpenAIClient] = []
+
+        # 预创建所有端点的客户端实例
+        for endpoint in ai_config.endpoints:
+            client = OpenAIClient(
+                api_key=endpoint.api_key,
+                base_url=endpoint.base_url,
+                model=endpoint.model,
+                max_tokens=ai_config.max_tokens,
+                temperature=ai_config.temperature
+            )
+            self._clients.append(client)
+
+        print(f"[API] {len(self._clients)} endpoints configured "
+              f"(failover {'enabled' if ai_config.failover_enabled else 'disabled'})")
+
+    def generate_summary_with_failover(
+        self,
+        blast_type: str,
+        context: Dict[str, Any]
+    ) -> str:
+        """
+        依次尝试所有API端点，直到成功或全部失败
+
+        Args:
+            blast_type: BLAST类型
+            context: BLAST结果上下文
+
+        Returns:
+            AI生成的摘要文本
+
+        Raises:
+            Exception: 所有端点都失败时抛出最后一个错误
+        """
+        last_error = None
+        messages = self._build_messages(blast_type, context)
+
+        for endpoint_idx, client in enumerate(self._clients):
+            endpoint = self.config.endpoints[endpoint_idx]
+            endpoint_name = endpoint.name
+
+            print(f"[API] Trying endpoint '{endpoint_name}' "
+                  f"({endpoint.base_url})...")
+
+            # 在每个端点内部重试
+            for attempt in range(1, self.config.retry_count + 1):
+                try:
+                    result = client.chat(messages)
+                    print(f"[API] Success with endpoint '{endpoint_name}'")
+                    return result
+                except TimeoutError as e:
+                    print(f"[API] Timeout on endpoint '{endpoint_name}' "
+                          f"(attempt {attempt}/{self.config.retry_count})")
+                    last_error = e
+                except ConnectionError as e:
+                    print(f"[API] Connection error on endpoint '{endpoint_name}': {e}")
+                    last_error = e
+                    break  # 连接错误直接切换端点
+                except Exception as e:
+                    print(f"[API] Error on endpoint '{endpoint_name}': {e}")
+                    last_error = e
+                    break  # 其他错误直接切换端点
+
+            # 检查是否启用故障转移，或者已经是最后一个端点
+            if self.config.failover_enabled and endpoint_idx < len(self._clients) - 1:
+                print("[API] Switching to fallback endpoint...")
+
+        # 所有端点都失败
+        raise last_error or Exception("All API endpoints failed")
+
+    def generate_summary_stream_with_failover(
+        self,
+        blast_type: str,
+        context: Dict[str, Any]
+    ) -> Generator[str, None, None]:
+        """
+        流式生成的故障转移版本
+
+        依次尝试所有API端点进行流式生成。
+
+        Args:
+            blast_type: BLAST类型
+            context: BLAST结果上下文
+
+        Yields:
+            AI生成的摘要文本片段
+        """
+        last_error = None
+        messages = self._build_messages(blast_type, context)
+
+        for endpoint_idx, client in enumerate(self._clients):
+            endpoint = self.config.endpoints[endpoint_idx]
+            endpoint_name = endpoint.name
+
+            print(f"[API] Trying endpoint '{endpoint_name}' "
+                  f"({endpoint.base_url})...")
+
+            # 流式模式：每个端点只尝试一次（流式难以中途切换）
+            try:
+                success = False
+                for chunk in client.chat_stream(messages):
+                    success = True
+                    yield chunk
+
+                if success:
+                    print(f"[API] Success with endpoint '{endpoint_name}'")
+                    return  # 成功完成，结束生成
+
+            except TimeoutError as e:
+                print(f"[API] Timeout on endpoint '{endpoint_name}'")
+                last_error = e
+            except ConnectionError as e:
+                print(f"[API] Connection error on endpoint '{endpoint_name}': {e}")
+                last_error = e
+            except Exception as e:
+                print(f"[API] Error on endpoint '{endpoint_name}': {e}")
+                last_error = e
+
+            # 检查是否启用故障转移
+            if self.config.failover_enabled and endpoint_idx < len(self._clients) - 1:
+                print("[API] Switching to fallback endpoint...")
+
+        # 所有端点都失败
+        raise last_error or Exception("All API endpoints failed")
+
+    def _build_messages(self, blast_type: str, context: Dict[str, Any]) -> list:
+        """构建消息列表"""
+        # 使用第一个客户端的方法构建消息
+        if self._clients:
+            return [
+                {
+                    "role": "system",
+                    "content": self._clients[0]._build_system_prompt(blast_type)
+                },
+                {
+                    "role": "user",
+                    "content": self._clients[0]._build_user_content(blast_type, context)
+                }
+            ]
+        return []
+
+
+def create_ai_client(config) -> Optional[FailoverAIClient]:
     """
     根据配置创建AI客户端
 
@@ -281,15 +438,9 @@ def create_ai_client(config) -> Optional[OpenAIClient]:
         config: 配置对象
 
     Returns:
-        AI客户端实例，如果配置无效则返回None
+        FailoverAIClient实例，如果配置无效则返回None
     """
     if not config.ai:
         return None
 
-    return OpenAIClient(
-        api_key=config.ai.api_key,
-        base_url=config.ai.base_url,
-        model=config.ai.model,
-        max_tokens=config.ai.max_tokens,
-        temperature=config.ai.temperature
-    )
+    return FailoverAIClient(config.ai)

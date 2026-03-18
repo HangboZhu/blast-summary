@@ -95,12 +95,13 @@ def main():
 
                 # 流式模式：边生成边写入
                 if args.stream:
-                    ai_summary = generate_ai_summary_stream(
+                    ai_summary = generate_ai_summary_stream_with_failover(
                         ai_client, result.program.value, context,
                         basic_summary, output_path, args.stdout
                     )
                 else:
-                    ai_summary = ai_client.generate_summary(
+                    # 使用故障转移方法生成摘要
+                    ai_summary = ai_client.generate_summary_with_failover(
                         result.program.value,
                         context
                     )
@@ -288,7 +289,7 @@ def save_report(report: str, output_path: Path):
         f.write(report)
 
 
-def generate_ai_summary_stream(
+def generate_ai_summary_stream_with_failover(
     ai_client,
     blast_type: str,
     context: dict,
@@ -297,10 +298,10 @@ def generate_ai_summary_stream(
     to_stdout: bool
 ) -> str:
     """
-    流式生成 AI 摘要并实时写入文件
+    流式生成 AI 摘要并实时写入文件（支持故障转移）
 
     Args:
-        ai_client: AI客户端
+        ai_client: FailoverAIClient客户端
         blast_type: BLAST类型
         context: AI上下文
         basic_summary: 基础报告
@@ -324,10 +325,10 @@ def generate_ai_summary_stream(
         print("\n" + "=" * 60)
         print(header, end='')
 
-    # 流式生成并写入
+    # 流式生成并写入（使用故障转移方法）
     full_ai_content = ""
     try:
-        for chunk in ai_client.generate_summary_stream(blast_type, context):
+        for chunk in ai_client.generate_summary_stream_with_failover(blast_type, context):
             full_ai_content += chunk
 
             if to_stdout:
