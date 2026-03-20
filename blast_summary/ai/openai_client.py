@@ -213,7 +213,7 @@ class OpenAIClient(BaseAIClient):
 - 最小E值: {min_evalue}
 - 覆盖度: {coverage_percent}%
 
-## 前10个最佳命中
+## 前{hits_count}个最佳命中
 {top_hits_table}
 
 请按以下格式输出分析报告（直接输出，不要开场白）：

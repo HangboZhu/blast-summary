@@ -63,13 +63,22 @@ class BaseAnalyzer(ABC):
         }
         return descriptions.get(self.result.program.value, self.result.program.value)
 
-    def prepare_ai_context(self) -> Dict[str, Any]:
+    def prepare_ai_context(self, top_hits: int = 10) -> Dict[str, Any]:
         """
         准备发送给AI的上下文信息
+
+        Args:
+            top_hits: 发送给AI的hits数量，None表示全部
 
         Returns:
             包含BLAST结果摘要的字典
         """
+        # 如果 top_hits 为 None，获取所有hits
+        if top_hits is None:
+            hits_count = len(self.result.hits)
+        else:
+            hits_count = top_hits
+
         return {
             "blast_type": self.result.program.value,
             "query_def": self.result.query_def,
@@ -77,7 +86,7 @@ class BaseAnalyzer(ABC):
             "database": self.result.database,
             "parameters": self.result.parameters,
             "statistics": self.statistics,
-            "top_hits": self.get_top_hits(10),
+            "top_hits": self.get_top_hits(hits_count),
             "total_hits": self.result.total_hits,
             "significant_hits": len(self.result.significant_hits)
         }

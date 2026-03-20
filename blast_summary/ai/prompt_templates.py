@@ -98,7 +98,7 @@ def get_user_prompt_template(blast_type: str) -> str:
 - 最小E值: {min_evalue}
 - 覆盖度: {coverage_percent}%
 
-## 前10个最佳命中
+## 前{hits_count}个最佳命中
 {top_hits_table}
 
 请按以下格式输出分析报告（直接输出，不要开场白）：
@@ -138,10 +138,10 @@ def format_context_for_prompt(context: Dict[str, Any]) -> Dict[str, Any]:
     """
     # 构建命中表格
     top_hits = context.get("top_hits", [])
-    hits_table_lines = ["| 排名 | 登录号 | 描述 | 得分 | E值 | 一致性 |"]
+    hits_table_lines = [f"| 排名 | 登录号 | 描述 | 得分 | E值 | 一致性 | (共{len(top_hits)}条)"]
     hits_table_lines.append("|------|--------|------|------|-----|--------|")
 
-    for hit in top_hits[:10]:
+    for hit in top_hits:
         desc = hit.get("definition", "")[:40]
         hits_table_lines.append(
             f"| {hit.get('rank', 'N/A')} | {hit.get('accession', 'N/A')} | "
@@ -166,7 +166,8 @@ def format_context_for_prompt(context: Dict[str, Any]) -> Dict[str, Any]:
         "max_identity": context.get("statistics", {}).get("max_identity", 0),
         "min_evalue": context.get("statistics", {}).get("min_evalue", 0),
         "coverage_percent": context.get("statistics", {}).get("coverage_percent", 0),
-        "top_hits_table": "\n".join(hits_table_lines)
+        "top_hits_table": "\n".join(hits_table_lines),
+        "hits_count": len(top_hits)
     }
 
     return formatted

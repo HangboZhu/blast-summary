@@ -91,7 +91,18 @@ def main():
         try:
             ai_client = create_ai_client(config)
             if ai_client:
-                context = analyzer.prepare_ai_context()
+                # 解析 top_hits 参数
+                if args.top_hits.lower() == "all":
+                    top_hits_count = None  # None 表示所有hits
+                else:
+                    try:
+                        top_hits_count = int(args.top_hits)
+                        if top_hits_count <= 0:
+                            top_hits_count = 10
+                    except ValueError:
+                        top_hits_count = 10
+
+                context = analyzer.prepare_ai_context(top_hits_count)
 
                 # 流式模式：边生成边写入
                 if args.stream:
@@ -196,6 +207,13 @@ Examples:
         "--stream",
         action="store_true",
         help="Enable streaming output, write to file in real-time"
+    )
+
+    parser.add_argument(
+        "--top-hits",
+        type=str,
+        default="10",
+        help="Number of top hits to send to AI for analysis. Use 'all' for all hits, or a number (default: 10)"
     )
 
     return parser.parse_args()
