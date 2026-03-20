@@ -91,6 +91,7 @@ blast-summary -i data/tblastn/tblastn_example.txt --no-ai
 | `--no-ai` | - | 跳过AI分析，仅生成基础报告 |
 | `--stdout` | - | 输出到标准输出而非文件 |
 | `--stream`| - | 是否采用流式输出，便于前端调用(如果指定了的话)|
+| `--top-hits`| - | 发送给ai的前top个比对结果|
 
 ### 批量处理
 
