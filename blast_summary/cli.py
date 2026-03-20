@@ -20,6 +20,48 @@ from .utils.species_parser import parse_species_file
 from .utils.statistics import format_blast_params
 
 
+def extract_task_id(file_path: str) -> Optional[str]:
+    """
+    从输入文件名中提取任务ID
+
+    Args:
+        file_path: 输入文件路径，如 '/path/to/AZ6SZJ3WZC4_5.txt'
+
+    Returns:
+        任务ID，如 'AZ6SZJ3WZC4'，提取失败返回 None
+    """
+    try:
+        # 获取文件名（不含路径和扩展名）
+        filename = Path(file_path).stem  # 例如 'AZ6SZJ3WZC4_5'
+        # 按 '_' 分割，取第一部分
+        parts = filename.split('_')
+        if parts:
+            return parts[0]
+    except Exception:
+        pass
+    return None
+
+
+def build_ai_report_header(task_id: Optional[str]) -> str:
+    """
+    构建 AI 报告的头部内容
+
+    Args:
+        task_id: 任务ID
+
+    Returns:
+        报告头部文本
+    """
+    header = "## CNCB-BLAST分析报告\n\n"
+
+    if task_id:
+        header += f"本内容为CNCB-BLAST任务ID为 {task_id} 的结果智能总结，详细的比对结果请见[此处](https://ngdc.cncb.ac.cn/blast/result?accession={task_id})。\n"
+
+    header += "以下内容由AI生成，仅供参考。\n\n"
+
+    return header
+
+
 def main():
     """Main function - CLI entry point"""
     args = parse_args()
@@ -84,6 +126,9 @@ def main():
     # Determine output path early for streaming
     output_path = determine_output_path(args, result, config)
 
+    # 从输入文件名中提取任务ID
+    task_id = extract_task_id(args.blast_file)
+
     # Use AI to generate biological interpretation (if API is configured)
     ai_summary = ""
     if config.ai and not args.no_ai:
@@ -108,7 +153,7 @@ def main():
                 if args.stream:
                     ai_summary = generate_ai_summary_stream_with_failover(
                         ai_client, result.program.value, context,
-                        basic_summary, output_path, args.stdout
+                        basic_summary, output_path, args.stdout, task_id
                     )
                 else:
                     # 使用故障转移方法生成摘要
@@ -123,7 +168,11 @@ def main():
 
     # Combine reports and output (非流式模式或有错误时)
     if not args.stream or not config.ai or args.no_ai:
-        full_report = combine_reports(basic_summary, ai_summary)
+        # 使用AI时只输出AI内容（带标题和任务信息），不输出基础报告
+        if args.no_ai or not ai_summary:
+            full_report = basic_summary
+        else:
+            full_report = build_ai_report_header(task_id) + ai_summary
 
         if args.stdout:
             print("\n" + "=" * 60)
@@ -313,7 +362,8 @@ def generate_ai_summary_stream_with_failover(
     context: dict,
     basic_summary: str,
     output_path: Path,
-    to_stdout: bool
+    to_stdout: bool,
+    task_id: Optional[str] = None
 ) -> str:
     """
     流式生成 AI 摘要并实时写入文件（支持故障转移）
@@ -325,12 +375,13 @@ def generate_ai_summary_stream_with_failover(
         basic_summary: 基础报告
         output_path: 输出文件路径
         to_stdout: 是否输出到标准输出
+        task_id: 任务ID
 
     Returns:
         完整的AI摘要文本
     """
-    # 准备报告头部（基础报告 + AI分隔符）
-    header = basic_summary + "\n---\n\n## 生物学解释\n\n"
+    # 构建报告头部（包含任务ID信息）
+    header = build_ai_report_header(task_id)
 
     # 确保输出目录存在
     if not to_stdout:
